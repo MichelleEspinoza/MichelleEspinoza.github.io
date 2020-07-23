@@ -57,7 +57,7 @@ header::before {
     right: 0;
     bottom: 0;
     display: block;
-    background: url(key.jpg);
+    background: url(laptop.jpg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
@@ -91,15 +91,4 @@ header::before {
 .img-fluid:hover {
     transform: scale(1.1); 
 }
-.cont1 {
-    background: white;
-} 
-.cont2 {
-    background: white;
-} 
-.cont3 {
-    background: white;
-} 
-.fondoC1 {
-    background-color: white;
-}
+
