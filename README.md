@@ -1,3 +1,0 @@
-# MichelleEspinoza
-
-Portfolio
