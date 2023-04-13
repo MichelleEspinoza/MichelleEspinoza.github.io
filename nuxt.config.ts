@@ -4,9 +4,10 @@ export default defineNuxtConfig({
         baseURL: '/MichelleEspinoza.github.io/'
     },
     css: ['~/assets/css/main.css'],
+    //modules: ['@nuxtjs/tailwindcss'],
     postcss: {
       plugins: {
-        tailwindcss: {},
+        tailwindcss: {cssPath: '~/assets/css/main.css',},
         autoprefixer: {}
       }
     }
