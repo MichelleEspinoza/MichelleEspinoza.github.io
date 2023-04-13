@@ -1,0 +1,1 @@
+import{h as t,b as a,f as s,r as o,o as l}from"./entry.b6ca24c7.js";const _={class:"bg-white text-black dark:text-white dark:bg-black min-h-screen"},c={class:"mb-auto"},d={__name:"Default",setup(n){return t({title:"Michelle Espinoza - Portfolio"}),(e,r)=>(l(),a("div",_,[s("main",c,[o(e.$slots,"default")])]))}};export{d as default};
