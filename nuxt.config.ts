@@ -4,7 +4,9 @@ export default defineNuxtConfig({
         baseURL: '/MichelleEspinoza.github.io/'
     },
     css: ['~/assets/css/main.css'],
-    //modules: ['@nuxtjs/tailwindcss'],
+    modules: [
+      '@nuxtjs/tailwindcss',
+    ],
     postcss: {
       plugins: {
         tailwindcss: {cssPath: '~/assets/css/main.css',},

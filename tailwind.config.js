@@ -5,15 +5,9 @@ module.exports = {
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
-    './error.vue'
+    './nuxt.config.{js,ts}'
   ],
-  safelist: [
-      {
-          pattern: /.*/,
-      },
-  ],
-  title: 'DragonFish',
+  title: 'Michelle Espinoza',
   theme: {
     extend: {
       colors: {
@@ -41,5 +35,6 @@ module.exports = {
       xl: ['24px', '32px']
     }
   },
-  plugins: []
+  //plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
