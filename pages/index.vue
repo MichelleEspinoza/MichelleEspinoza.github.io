@@ -1,5 +1,5 @@
 <template>
-    <div id="hero" class="bg-bluegray laptop:px-14 py-24 xl:px-[80px] max-[315px]:mr-[-34px]">
+    <div id="hero" class="bg-black laptop:px-14 py-24 xl:px-[80px] max-[315px]:mr-[-34px]">
       Test 02
       <div class="flex justify-start space-x-4 mb-14">
           <button class="rounded-md bg-blue text-white px-4 py-2">

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     app: {
         baseURL: '/MichelleEspinoza.github.io/'
     },
-    css: ['/assets/css/main.css'],
+    css: ['~/assets/css/main.css'],
     postcss: {
       plugins: {
         tailwindcss: {},
