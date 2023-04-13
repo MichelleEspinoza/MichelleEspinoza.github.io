@@ -3,12 +3,9 @@ export default defineNuxtConfig({
   ssr: false,
   
   nitro: { compressPublicAssets: true },
-  imports: {
-    dirs: ['stores'],
-  },
-    /*app: {
+    app: {
         baseURL: '/MichelleEspinoza.github.io/'
-    },*/
+    },
     css: ['@/assets/css/main.css'],
     modules: [
       '@nuxtjs/tailwindcss',
