@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-header h3 {
+/*header h3 {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -23,11 +23,11 @@ header h6 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+}*/
 
 .img-contact {
-    height: 125% !important;
-    max-width: 125% !important;
+    height: 185% !important;
+    max-width: 165% !important;
 }
 
 .img-fluid {
