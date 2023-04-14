@@ -2,239 +2,281 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            title: 'Michelle Espinoza - Portafolio',
+            theme: {
+                extend: {
+                    colors: {
+                        purple: '#5f1ec4',
+                        pink: '#e41a92',
+                        orange: '#ff7a01',
+                        lesspink: '#f07995',
+                        yellow: '#ffd600',
+                        blue: '#01d3f6'
+                    },
+                    minHeight: {
+                        20: '20px'
+                    }
+                },
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    laptop: '1024px',
+                    xl: '1440px'
+                },
+                fontFamily: {
+                    Poppins: ['Roboto', 'sans-serif']
+                },
+                fontSize: {
+                    sm: ['14px', '20px'],
+                    base: ['16px', '24px'],
+                    lg: ['20px', '28px'],
+                    xl: ['24px', '32px']
+                }
+            },
+        }
+    </script>
     <link href="main.css" rel="stylesheet">
     <link rel="icon" type="png" href="ic.ico" />
     <title>Portafolio: Michelle Espinoza</title>
 </head>
 
 <body>
-
-    <div class="container1">
-
-        <!-- Section: Block Content -->
-        <section class="cont1 dark-grey-text text-center ">
-            <br><br> <img src="media/logo2.svg" class="rounded mx-auto d-block" width="100" height="100"> <br>
-            <h3 class="text-center font-weight-bold mb-2 pb-2"><span class="fondoC1">
-                &nbsp;Pizzería: La reportada&nbsp;
-               <a href="https://github.com/MichelleEspinoza/django-project-master" target="_blank" class="text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
-                </svg></a>
-            </span></h3>
-            <p class="text-uppercase text-center w-responsive mx-auto mb-5">Proyecto desarrollado con framework Django.</p>
-
-            <!-- First row -->
-            <div class="row">
-
-                <!-- First column -->
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/4Inicio.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- First column -->
-
-                <!-- Second column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/5PizzasyPaquetes.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- Second column -->
-
-                <!-- Third column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/6SucursalesSesion.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- Third column -->
-                <br><br><br>
-                <p class="text-center text-muted w-responsive mx-auto mb-5">Proyecto desarrollado dentro de materia: programación web
-                    <br><a class="font-weight-bold text-black-50">Responsabilidad: </a>Frontend</p>
+    <div class="text-white min-h-screen">
+        <header>
+            <div class="h-screen bg-purple">
+                <!--lang-->
+                <span class="flex justify-between mr-4">
+                    <a class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4"
+                        href="indexEn.html">
+                        <img src="https://images.emojiterra.com/twitter/512px/1f1f2-1f1fd.png" alt=""" width="20"
+                            class="mx-2 my-1">
+                        <span class="text-black mr-2 my-1">ES</span>
+                    </a>
+                    <a class="flex bg-lesspink rounded-md border border-white shadow-sm shadow-white m-4"
+                        href="media/cv/Michelle Espinoza-Español.pdf" target="_blank">
+                        <img src="media/svg/CV.svg" alt="" width="20" class="mx-2 my-1">
+                        <span class="text-black mr-2 my-1">Descargar CV - ES</span>
+                    </a>
+                </span>
             </div>
-            <!-- First row -->
-            <br><br>
-        </section>
-        <!-- Section: Block Content SOOOO-->
+            <h6 class="font-bold text-center text-uppercase text-xl mb-4">Portafolio</h6>
+            <h3 class="font-bold text-center pb-2">Michelle Espinoza</h3>
+        </header>
 
-        <!-- Section: Block Content -->
-        <section class="cont2 dark-grey-text text-center ">
-            <br><br> <img src="media/logo1.png" class="rounded mx-auto d-block" width="100" height="100"> <br>
-            <h3 class="text-center font-weight-bold mb-2 pb-2"><span class="fondoC2">
-                Refugio de perros
-               <a href="https://github.com/MichelleEspinoza/refugio-de-perros" target="_blank" class="text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
-                    </svg></a>
-            </span></h3>
-            <p class="text-uppercase text-center w-responsive mx-auto mb-5">Proyecto desarrollado con framework Django.</p>
-
-            <!-- First row -->
-            <div class="row">
-
-                <!-- First column -->
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/7Inicio.gif" class="img-fluid img-thumbnail" alt="thumbnail">
+        <!-- Sobre mi -->
+        <section class="bg-pink">
+            <div class="h-screen">
+                <div class="flex justify-between items-center mx-52 h-screen">
+                    <div class="w-2/3">
+                        <h2 class="white font-bold text-xl uppercase">Sobre Mi</h2>
+                        <p class="font-bold text-base">Soy una graduada de ingeniería en sistemas
+                            computacionales, en proceso de titulación, con
+                            enfoque en el análisis, diseño y desarrollo de software. Con las habilidades de ser
+                            trabajadora,
+                            dedicada, creativa, honesta, autodidacta y trabajo en equipo.</p>
+                    </div>
+                    <div class="w-1/3">
+                        <img src="media/svg/CV.svg" alt="">
                     </div>
                 </div>
-                <!-- First column -->
-
-                <!-- Second column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/8Solicitudes.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- Second column -->
-
-                <!-- Third column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/9MascotaAdopcionNewUser.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- Third column -->
-                <br><br>
-                <p class="text-center text-muted w-responsive mx-auto mb-5">Proyecto desarrollado: Independiente.
-                    <br><a class="font-weight-bold text-black-50">Responsabilidad: </a>Frontend y Backend(python)</p>
-            </div>
-            <!-- First row -->
-
-        </section>
-        <!-- Section: Block Content SOOOO-->
-
-        <!-- Section: Block Content -->
-        <section class="cont3 dark-grey-text text-center">
-            <br><br> <img src="media/logo3.ico" class="rounded mx-auto d-block" width="100" height="100"> <br>
-            <h3 class="text-center font-weight-bold mb-2 pb-2"><span class="fondoC3">
-                Sistema de gestión de inventario y agenda para clinica medibiologica 
-            </span></h3>
-            <p class="text-uppercase text-center w-responsive mx-auto mb-5">Proyecto desarrollado en Visual Studio C# y SQL server.</p>
-
-            <!-- First row -->
-            <div class="row">
-
-                <!-- First column -->
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/1SesioNotify.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- First column -->
-
-                <!-- Second column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/2Agenda.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- Second column -->
-
-                <!-- Third column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/3Inventario.gif" class="img-fluid img-thumbnail" alt="thumbnail">
-                    </div>
-                </div>
-                <!-- Third column -->
-                <br><br>
-                <p class="text-center text-muted w-responsive mx-auto mb-5">Desarrollado como proyecto de residencia.
-                    <br><a class="font-weight-bold text-black-50">Responsabilidad: </a>Análisis y diseño de base de datos,creación de procedimientos almacenados y programación en c#.</p>
             </div>
         </section>
-        <!-- Section: Block Content SOOOO-->
-
-        <!-- Section: Block Content4 -->
-        <section class="cont3 dark-grey-text text-center">
-            <br><br> <img src="media/logo4.png" class="rounded mx-auto d-block" width="100" height="100"> <br>
-            <h3 class="text-center font-weight-bold mb-2 pb-2"><span class="fondoC3">
-                Sistema de gestión para tienda
-                <a href="https://github.com/MichelleEspinoza/michelle-blogsi" target="_blank" class="text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
-                  </svg></a>
-               </span></h3>
-            <p class="text-uppercase text-center w-responsive mx-auto mb-5">Proyecto desarrollado en Laravel 8 y MySQL.</p>
-
-            <!-- First row -->
-            <div class="row">
-
-                <!-- First column -->
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/10inicio.gif" class="img-fluid img-thumbnail" alt="thumbnail">
+        <!-- Conocimientos -->
+        <section class="bg-orange">
+            <div class="h-screen">
+                <div class="flex flex-col items-center justify-center">
+                    <h2 class="font-bold text-xl my-1 mt-12 mb-4 uppercase">Conocimientos</h2>
+                    <!-- Lan-->
+                    <div class="flex">
+                        <img src="media/svg/lang.svg" alt="">
+                        <h3 class="font-bold ml-2 m-4"> Lenguajes</h3>
                     </div>
-                </div>
-                <!-- First column -->
-
-                <!-- Second column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/11menu.gif" class="img-fluid img-thumbnail" alt="thumbnail">
+                    <div>
+                        <span class="text-white rounded bg-[#0000ff] p-1">Java</span>
+                        <span class="text-white rounded bg-[#239120] p-1">C#</span>
+                        <span class="text-white rounded bg-[#dd0031] p-1">HTML</span>
+                        <span class="text-white rounded bg-[#323330] p-1">JavaScript</span>
+                        <span class="text-white rounded bg-[#1572b6] p-1">CSS</span>
+                        <span class="text-white rounded bg-[#35495e] p-1">TypeScript</span>
                     </div>
-                </div>
-                <!-- Second column -->
-
-                <!-- Third column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="view overlay z-depth-1">
-                        <img src="media/12crearV.gif" class="img-fluid img-thumbnail" alt="thumbnail">
+                    <!-- framework -->
+                    <div class="flex items-center mt-8 mb-4">
+                        <img src="media/svg/frameworks-cms.svg" alt="">
+                        <h3 class="font-bold ml-2 m-4"> Frameworks & CMS’s </h3>
                     </div>
+                    <div>
+                        <span class="text-white rounded bg-[#092e20] p-1">Django</span>
+                        <span class="text-white rounded bg-[#563d7c] p-1">Bootstrap</span>
+                        <span class="text-white rounded bg-[#5c2d91] p-1">ASP.net</span>
+                        <span class="text-white rounded bg-[#35495e] p-1">Vue2.JS</span>
+                        <span class="text-white rounded bg-[#44cc11] p-1">Entity Framework</span>
+                        <span class="text-white rounded bg-[#35495e] p-1">Vue3.js</span>
+                        <span class="text-white rounded bg-[#fcc624] p-1">Syncfusion</span>
+                        <span class="text-white rounded bg-[#0000ff] p-1">NUXT3</span>
+                        <span class="text-white rounded bg-[#38b2ac] p-1">Tailwind CSS</span>
+                        <span class="text-white rounded bg-[#dd0031] p-1">Angular 14</span>
+                    </div>
+                    <!-- Control version -->
+                    <div class="flex items-center mt-8 mb-4">
+                        <img src="media/svg/version-control.svg" alt="">
+                        <h3 class="font-bold ml-2 mt-1"> Control de versiones </h3>
+                    </div>
+                    <div>
+                        <span class="text-white rounded bg-[#ff9900] p-1">Gitlab</span>
+                        <span class="text-white rounded bg-black p-1">Github</span>
+                        <span class="text-white rounded bg-[#00c4cc] p-1">DevOps</span>
+                    </div>
+                    <!-- BD -->
+                    <div class="flex items-center mt-8 m-4">
+                        <img src="media/svg/db.svg" alt="" width="50px">
+                        <h3 class="font-bold ml-2 mt-1"> Base de datos </h3>
+                    </div>
+                    <div>
+                        <span class="rounded bg-[#0000ff] p-1">SQL server</span>
+                    </div>
+
                 </div>
-                <!-- Third column -->
-                <br><br>
-                <p class="text-center text-muted w-responsive mx-auto mb-5">Desarrollado como proyecto: Independiente.
-                    <br><a class="font-weight-bold text-black-50">Responsabilidad: </a>Frontend y Backend(PHP 8.0.2)</p>
             </div>
         </section>
-        <!-- Section: Block Content SOOOO-->
+        <!-- Proyectos -->
+        <section class="bg-lesspink">
+            <div class="h-screen">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <h2 class="font-bold text-xl my-3 mt-8 uppercase">Proyectos</h2>
+                    <!--inicio::La reportada -->
+                    <div class="flex flex-col items-center">
+                        <img src="media/logos/logo2.svg" alt="" width="100" height="100">
+                        <h3 class="flex text-white font-bold ml-2">
+                            &nbsp;Pizzeria: La reportada&nbsp;
+                            <a href="https://github.com/MichelleEspinoza/django-project-master" target="_blank" class="text-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                </svg>
+                            </a>
+                        </h3>
+                            <p class="text-white uppercase">Proyecto desarrollado con framework DJANGO</p>
+                    </div>
+                    <!-- multimedia -->
+                    <div class="flex">
+                            <span class="w-1/3">
+                                <img src="media/gif/reportada/4Inicio.gif" width="400px" class="img-fluid img-thumbnail" alt="thumbnail">
+                            </span>
 
-        <footer class="container-fluid bg-inverse py-2 bg-dark">
-            <div class="row text-white text-white">
-                <div class="col-md-4 mb-0 mr-2">
-                    <h4 class="lead font-weight-bold">Contacto</h4>
-                    <p><span class="badge badge-danger my-0">Gmail</span> estephani.espinoza17@tectijuana.edu.mx</p>
-                    <p><span class="badge badge-primary my-0">Tel</span> 044 664 173 22 66</p>
-                    <p>
-                        <a class="text-white" href="media/cv/Michelle-Espinoza-Español.pdf" target="_blank">
-                            <span class="badge badge-success my-0">C.V</span> Michelle Espinoza - Es</a>
-                    </p>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3 ">
+                            <span class="w-1/3">
+                                <img src="media/gif/reportada/5PizzasyPaquetes.gif"  width="400px" class="img-fluid img-thumbnail" alt="thumbnail">
+                            </span>
+                            
+                            <span class="w-1/3">
+                                <img src="media/gif/reportada/6SucursalesSesion.gif"  width="400px" class="img-fluid img-thumbnail" alt="thumbnail">
+                            </span>
+                    </div>
+                    <!-- descripcion -->
+                    <div>
+                        <p>Proyecto desarrollado dentro de materia: programación web</p>
+                        <p><span class="font-bold">Responsabilidad:</span> Frontend</p>
+                    </div>
+                    <!-- fin::La reportada -->
+                    <!--inicio::Refugio de perros -->
+                    <!--<div class="flex flex-col items-center">
+                        <img src="media/logos/logo1.png" alt="" width="100" height="100">
+                        <h3 class="flex text-white font-bold ml-2">
+                            &nbsp;Refugio de perros&nbsp;
+                            <a href="https://github.com/MichelleEspinoza/refugio-de-perros" target="_blank" class="text-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                </svg>
+                            </a>
+                        </h3>
+                            <p class="text-white uppercase">Proyecto desarrollado con framework DJANGO</p>
+                    </div>-->
+                    <!-- multimedia -->
+                    <!--<div class="flex">
+                            <span class="w-1/3">
+                                <img src="media/gif/reportada/4Inicio.gif" width="400px" class="img-fluid img-thumbnail" alt="thumbnail">
+                            </span>
+                           
+                            <span class="w-1/3">
+                                <img src="media/gif/reportada/5PizzasyPaquetes.gif"  width="400px" class="img-fluid img-thumbnail" alt="thumbnail">
+                            </span>
+
+                            <span class="w-1/3">
+                                <img src="media/gif/reportada/6SucursalesSesion.gif"  width="400px" class="img-fluid img-thumbnail" alt="thumbnail">
+                            </span>
+                    </div>-->
+                    <!-- descripcion -->
+                    <!--<div>
+                        <p class="text-white">Proyecto desarrollado dentro de materia: programación web</p>
+                        <p><span class="text-white font-bold">Responsabilidad:</span> Frontend</p>
+                    </div>-->
+                    <!-- fin::Refugio de perros -->
                 </div>
             </div>
-            <div class="footer-copyright text-center text-white mt-0">© 2020 Copyright:
-                <a class="dark-grey-text" href="https://michelleespinoza.github.io/">michelleespinoza.github.io/</a>
+        </section>
+        <!-- Contacto -->
+        <section class="bg-yellow">
+            <div class="h-screen">
+                <div class="flex flex-col justify-center items-center h-screen">
+                    <h2 class="font-bold text-xl my-3 mt-8 uppercase mb-4">Contacto</h2>
+
+                    <div class="flex flex-row justify-center space-x-8">
+                        <a href="https://discord.gg/MichelleEspinoza" target="_blank" rel="nofollow">
+                            <img alt="Discord" class="img-contact" src="https://camo.githubusercontent.com/9c1f6abe034a366f0b32065ddd7016cfa744156cb1dfd111f9921ff04d9b21b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d2532333732383944412e7376673f6c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465"
+                            data-canonical-src="https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&amp;logoColor=white">
+                        </a>
+                        <a href="https://facebook.com/michelle.espinoza.7393" target="_blank" rel="nofollow">
+                            <img alt="Facebook" class="img-contact" src="https://camo.githubusercontent.com/6507b6af1fa0c23a32321b4594fe0f353fc56a2e6721ea67a5f51cd830c85b61/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616365626f6f6b2d2532333138373746322e7376673f6c6f676f3d46616365626f6f6b266c6f676f436f6c6f723d7768697465"
+                            data-canonical-src="https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&amp;logoColor=white">
+                        </a>
+                        <a href="https://instagram.com/michelle.espinoza.96" target="_blank" rel="nofollow">
+                            <img alt="Instagram" class="img-contact" src="https://camo.githubusercontent.com/0641e2731604a57f9b9f2de4be17fcf1893c1fbf31dcb3e276f4281208616a1c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f496e7374616772616d2d2532334534343035462e7376673f6c6f676f3d496e7374616772616d266c6f676f436f6c6f723d7768697465"
+                            data-canonical-src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&amp;logoColor=white">
+                        </a>
+                        <a href="https://linkedin.com/in/michelle-espinoza-4682621b0" target="_blank" rel="nofollow">
+                            <img alt="LinkedIn" class="img-contact" src="https://camo.githubusercontent.com/f17ba9730c27e5f1230325b94c8b68bbf3115d32650866f6e3d0ade68201beea/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d2532333030373742352e7376673f6c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465"
+                            data-canonical-src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white">
+                        </a>
+                        <a href="https://twitter.com/MichelleEspin0" rel="nofollow">
+                            <img alt="Twitter" class="img-contact" src="https://camo.githubusercontent.com/2cbca4be42d81c6833fd417d74f5322e80861326d03d52289924138947be7b4e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d2532333144413146322e7376673f6c6f676f3d54776974746572266c6f676f436f6c6f723d7768697465" 
+                            data-canonical-src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&amp;logoColor=white">
+                        </a>
+                        <a href="tel:+526641732266" rel="nofollow">
+                            <img alt="Whatsapp" class="img-contact" src="https://img.shields.io/badge/Whatsapp-%1bd741.svg?logo=Whatsapp&amp;logoColor=white" 
+                            data-canonical-src="https://img.shields.io/badge/Whatsapp-%1bd741.svg?logo=Whatsapp&amp;logoColor=white">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="xl:px-[80px] text-white bg-blue font-semibold">
+            <div class="flex flex-col laptop:flex-row justify-between bg-blue p-6">
+                <p>
+                    Copyright © 2023 Michelle Espinoza
+                </p>
+                <p>
+                    Address
+                </p>
+                <p>
+                    email
+                </p>
+                <p>
+                    6641732266
+                </p>
             </div>
         </footer>
 
-    </div>
 
-    <header>
-        <div class="mx-4 px-4">
-            <p class="text-right pl-4 pt-2 text-monospace">
-                <a class="btn btn-outline-dark" href="indexEn.html">
-                    <img src="http://www.etimpjeans.com/wp-content/uploads/2019/01/eeuu.png" width="20"> <small class="text-white">EN</small>
-                </a>
-            </p>
-        </div>
-        <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">Portafolio</h6>
-        <h3 class="font-weight-bold text-center dark-grey-text pb-2">Michelle Espinoza</h3>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </div>
+    <!--script-->
 </body>
 
 </html>
