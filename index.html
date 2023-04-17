@@ -58,7 +58,7 @@
                     Poppins: ['Roboto', 'sans-serif']
                 },
                 fontSize: {
-                    sm: ['14px', '20px'],
+                    sm: ['14px', '24px'],
                     base: ['18px', '24px'],
                     lg: ['24px', '28px'],
                     xl: ['28px', '32px'],
@@ -67,13 +67,16 @@
             },
         }
     </script>
+    <!-- styles -->
     <link href="main.css" rel="stylesheet">
+    <!--icon-->
     <link rel="icon" type="png" href="icon.ico" />
     <title>Portafolio: Michelle Espinoza</title>
 </head>
 
 <body>
-    <div class="text-white min-h-screen">
+    <div  class="text-white min-h-screen">
+        <!-- header --> 
         <header>        
         <div class="w-screen bg-purple">
             <!--lang-->
@@ -92,20 +95,20 @@
             </span>
         </div>
         <div class="flex min-h-screen items-center justify-center bg-purple static">
-            <span class="absolute pr-[44vw]"><img src="/media/svg/avatar.svg" alt="avatar" width="150px"></span>
+            <span class="absolute pr-[44vw] laptop:pr-[53vw]"><img src="/media/svg/avatar.svg" alt="avatar" width="150px"></span>
             <div>
-                <h6 class="font-bold text-center text-uppercase text-xl mb-4">Portafolio</h6>
-              <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
+                <h6 class="font-bold text-center text-uppercase text-xxl xl:text-[48px] mb-4">Portafolio</h6>
+              <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl xl:text-xxl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
             </div>
           </div>
         </header>
         <!-- Sobre mi -->
         <section class="bg-pink">
             <div class="h-screen">
-                <div class="flex justify-between items-center mx-52 h-screen">
+                <div class="flex justify-between items-center mx-52 laptop:mx-20 xl:mx-52 h-screen">
                     <div class="w-2/3">
                         <h2 class="white font-bold text-xxl uppercase mb-4">Sobre Mi</h2>
-                        <p class="font-bold text-lg mr-12 text-justify">Soy una graduada de ingeniería en sistemas
+                        <p class="font-bold text-lg mr-12 text-justify"> Soy una graduada de ingeniería en sistemas
                             computacionales, del Instituto Técnologico de Tijuana, en proceso de titulación, con
                             enfoque en el análisis, diseño y desarrollo de software. Con las habilidades de ser:
                             trabajadora, dedicada, creativa, honesta, autodidacta y trabajo en equipo.</p>
@@ -118,9 +121,9 @@
         </section>
         <!-- Conocimientos -->
         <section class="bg-orange">
-            <div class="h-screen">
+            <div class="h-screen flex flex-col justify-center">
                 <div class="flex flex-col items-center justify-center">
-                    <h2 class="font-bold text-xl my-1 mt-12 mb-4 uppercase">Conocimientos</h2>
+                    <h2 class="font-bold text-xl lg:text-xxl my-1 mb-4 uppercase">Conocimientos</h2>
                     <!-- Lan-->
                     <div class="flex">
                         <img src="media/svg/lang.svg" alt="">
@@ -177,7 +180,7 @@
         <section class="bg-lesspink static">
             <div class="h-screen">
                 <div class="flex flex-col items-center justify-center text-center">
-                    <h2 class="font-bold text-xl my-1 mt-12 mb-4 uppercase">Proyectos</h2>
+                    <h2 class="font-bold text-xxl my-1 mt-12 mb-4 uppercase">Proyectos</h2>
                 </div>
                 <!-- Swiper -->
                 <div class="body">
@@ -186,8 +189,8 @@
                          <div class="swiper-slide">
                             <!--inicio::La reportada -->
                             <div class="flex flex-col items-center content-center">
-                                <img src="media/logos/logo2.svg" alt="" width="120" height="120">
-                                <h3 class="flex text-white text-base font-bold m-1">
+                                <img src="media/logos/logo2.svg" alt="" width="9.5%">
+                                <h3 class="flex text-white text-base xl:text-lg font-bold m-1">
                                     &nbsp;Pizzeria: La reportada&nbsp;
                                     <a href="https://github.com/MichelleEspinoza/django-project-master" target="_blank" class="text-secondary">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -196,21 +199,21 @@
                                         </svg>
                                     </a>
                                 </h3>
-                                    <p class="uppercase m-1 text-sm">Proyecto desarrollado con framework DJANGO</p>
+                                    <p class="uppercase m-1 text-sm xl:text-lg">Proyecto desarrollado con framework DJANGO</p>
                                     <!-- multimedia -->
-                                    <div class="flex space-x-6">
+                                    <div class="flex space-x-5 xl:space-x-2 mx-5 xl:mx-1">
                                         <span>
-                                            <img src="media/gif/reportada/4Inicio.gif" width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/reportada/4Inicio.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/reportada/5PizzasyPaquetes.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/reportada/5PizzasyPaquetes.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/reportada/6SucursalesSesion.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/reportada/6SucursalesSesion.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                     </div>
                                     <!-- descripcion -->
-                                    <div class="mt-2">
+                                    <div class="mt-2 text-sm xl:text-lg">
                                         <p>Proyecto desarrollado dentro de materia: programación web</p>
                                         <p><span class="font-bold">Responsabilidad:</span> Frontend</p>
                                     </div>
@@ -220,8 +223,8 @@
                          <div class="swiper-slide">
                             <!--inicio::Refugio de perros -->
                             <div class="flex flex-col items-center content-center">
-                                <img src="media/logos/logo1.png" alt="" width="120" height="120">
-                                <h3 class="flex text-white text-base font-bold m-1">
+                                <img src="media/logos/logo1.png" alt="" width="9.5%">
+                                <h3 class="flex text-white text-base xl:text-lg font-bold m-1">
                                     &nbsp;Refugio de perros&nbsp;
                                     <a href="https://github.com/MichelleEspinoza/refugio-de-perros" target="_blank" class="text-secondary">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -229,21 +232,21 @@
                                             <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
                                         </svg></a>
                                 </h3>
-                                    <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO CON FRAMEWORK DJANGO.</p>
+                                    <p class="uppercase m-1 text-sm xl:text-lg">PROYECTO DESARROLLADO CON FRAMEWORK DJANGO.</p>
                                     <!-- multimedia -->
-                                    <div class="flex space-x-6">
+                                    <div class="flex space-x-6 xl:space-x-2 mx-5 xl:mx-1">
                                         <span>
-                                            <img src="media/gif/dogs/7Inicio.gif" width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/dogs/7Inicio.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/dogs/8Solicitudes.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/dogs/8Solicitudes.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl"alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/dogs/9MascotaAdopcionNewUser.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/dogs/9MascotaAdopcionNewUser.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                     </div>
                                     <!-- descripcion -->
-                                    <div class="mt-2">
+                                    <div class="mt-2 text-sm xl:text-lg">
                                         <p>Proyecto desarrollado: Independiente.</p>
                                         <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(python)</p>
                                     </div>
@@ -253,25 +256,25 @@
                          <div class="swiper-slide">
                             <!--inicio::mediobilogica -->
                             <div class="flex flex-col items-center content-center">
-                                <img src="media/logos/logo3.ico" alt="" width="120" height="120">
-                                <h3 class="flex text-white text-base font-bold m-1">
+                                <img src="media/logos/logo3.ico" alt="" width="9.5%" height="120">
+                                <h3 class="flex text-white text-base xl:text-lg font-bold m-1">
                                     &nbsp;Sistema de gestión de inventario y agenda para clinica medibiologica&nbsp;
                                 </h3>
-                                    <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO EN VISUAL STUDIO C# Y SQL SERVER.</p>
+                                    <p class="uppercase m-1 text-sm xl:text-lg">PROYECTO DESARROLLADO EN VISUAL STUDIO C# Y SQL SERVER.</p>
                                     <!-- multimedia -->
-                                    <div class="flex space-x-6">
+                                    <div class="flex space-x-6 xl:space-x-2 mx-5 xl:mx-1">
                                         <span>
-                                            <img src="media/gif/medic/1SesioNotify.gif" width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/medic/1SesioNotify.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/medic/2Agenda.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/medic/2Agenda.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/medic/3Inventario.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/medic/3Inventario.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                     </div>
                                     <!-- descripcion -->
-                                    <div class="mt-2">
+                                    <div class="mt-2 text-sm xl:text-lg">
                                         <p>Desarrollado como proyecto de residencia.</p>
                                         <p><span class="font-bold">Responsabilidad:</span>Análisis y diseño de base de datos,creación de procedimientos almacenados y programación en c#.</p>
                                     </div>
@@ -281,8 +284,8 @@
                          <div class="swiper-slide">
                             <!--inicio:: tienda  -->
                             <div class="flex flex-col items-center content-center">
-                                <img src="media/logos/logo4.png" alt="" width="120" height="120">
-                                <h3 class="flex text-white text-base font-bold m-1">
+                                <img src="media/logos/logo4.png" alt="" width="9.5%" height="120">
+                                <h3 class="flex text-white text-base xl:text-lg font-bold m-1">
                                     &nbsp;Sistema de gestión para tienda&nbsp;
                                     <a href="https://github.com/MichelleEspinoza/michelle-blogsi" target="_blank" class="text-secondary">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -291,21 +294,21 @@
                                         </svg>
                                     </a>
                                 </h3>
-                                    <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO EN LARAVEL 8 Y MYSQL.</p>
+                                    <p class="uppercase m-1 text-sm xl:text-lg">PROYECTO DESARROLLADO EN LARAVEL 8 Y MYSQL.</p>
                                     <!-- multimedia -->
-                                    <div class="flex space-x-6">
+                                    <div class="flex space-x-5 xl:space-x-2 mx-5 xl:mx-0">
                                         <span>
-                                            <img src="media/gif/store/10inicio.gif" width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/store/10inicio.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/store/11menu.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/store/11menu.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                         <span>
-                                            <img src="media/gif/store/12crearV.gif"  width="400px" class="img-fluid" alt="thumbnail">
+                                            <img src="media/gif/store/12crearV.gif" class="img-fluid img-fluid-lg xl:img-fluid-xl" alt="thumbnail">
                                         </span>
                                     </div>
                                     <!-- descripcion -->
-                                    <div class="mt-2">
+                                    <div class="mt-2 text-sm xl:text-lg">
                                         <p>Desarrollado como proyecto: Independiente.</p>
                                         <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(PHP 8.0.2)</p>
                                     </div>
@@ -320,14 +323,14 @@
                        </div>
                        <div class="swiper-pagination"></div>
                      </div>
-                   </div>
+                </div>
             </div>
         </section>
         <!-- Contacto -->
         <section class="bg-yellow">
             <div class="h-screen">
                 <div class="flex flex-col justify-center items-center h-screen">
-                    <h2 class="font-bold text-xxl my-3 mt-8 uppercase mb-4">Contacto</h2>
+                    <h2 class="font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4">Contacto</h2>
 
                     <div class="flex flex-row justify-center space-x-16">
                         <a class="transition ease-in-out hover:scale-110 duration-300" href="https://discord.gg/MichelleEspinoza" target="_blank" rel="nofollow">
@@ -358,7 +361,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- footer -->
         <footer class="px-4 text-white bg-blue font-semibold">
             <div class="bg-blue">
                 <span class="flex items-center pt-2">
@@ -373,8 +376,6 @@
                 </p>
             </div>
         </footer>
-
-
     </div>
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -391,6 +392,7 @@
           },
         });
       </script>
+      
 </body>
 
 </html>
