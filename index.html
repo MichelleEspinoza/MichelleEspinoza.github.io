@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,65 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
      <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script>
-        tailwind.config = {
-            title: 'Michelle Espinoza - Portafolio',
-            theme: {
-                extend: {
-                    keyframes: {
-                        typing: {
-                        "0%": {
-                            width: "0%",
-                            visibility: "hidden"
-                        },
-                        "100%": {
-                            width: "100%"
-                        }  
-                        },
-                        blink: {
-                        "50%": {
-                            borderColor: "transparent"
-                        },
-                        "100%": {
-                            borderColor: "white"
-                        }  
-                        }
-                    },
-                    animation: {
-                        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
-                    },
-                    colors: {
-                        purple: '#5f1ec4',
-                        pink: '#e41a92',
-                        orange: '#ff7a01',
-                        lesspink: '#f07995',
-                        yellow: '#ffd600',
-                        blue: '#01d3f6'
-                    },
-                    minHeight: {
-                        20: '20px'
-                    }
-                },
-                screens: {
-                    sm: '480px',
-                    md: '768px',
-                    lg: '976px',
-                    laptop: '1024px',
-                    xl: '1440px'
-                },
-                fontFamily: {
-                    Poppins: ['Roboto', 'sans-serif']
-                },
-                fontSize: {
-                    sm: ['14px', '24px'],
-                    base: ['18px', '24px'],
-                    lg: ['24px', '28px'],
-                    xl: ['28px', '32px'],
-                    xxl: ['38px', '45px']
-                }
-            },
-        }
-    </script>
+    <script src="/tailwind.js"></script>
     <!-- styles -->
     <link href="main.css" rel="stylesheet">
     <!--icon-->
@@ -83,9 +25,9 @@
             <span class="flex justify-between mr-4 max-[320px]:mr-0">
                 <a class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4"
                     href="indexEn.html">
-                    <img src="https://images.emojiterra.com/twitter/512px/1f1f2-1f1fd.png" alt="lang" width="20"
+                    <img src="http://www.etimpjeans.com/wp-content/uploads/2019/01/eeuu.png" alt="lang" width="20"
                         class="mx-2 my-1">
-                    <span class="text-black mr-2 my-1">ES</span>
+                    <span class="text-black mr-2 my-1">EN</span>
                 </a>
                 <a class="flex bg-lesspink rounded-md border border-white shadow-sm shadow-white m-4"
                     href="media/cv/Michelle Espinoza-Español.pdf" target="_blank">
@@ -112,10 +54,11 @@
         <!-- Sobre mi -->
         <section class="bg-pink">
             <div class="h-screen">
+                <div class="absolute"><img src="/media/svg/rainbow.svg" class="w-[40%] max-[624px]:hidden" alt=""></div>
                 <div class="flex max-lg:flex-col justify-between max-lg:justify-center items-center mx-2 laptop:mx-20 xl:mx-52 h-screen">
-                    <div class="w-2/3 max-[624px]:w-[100%] max-lg:[w-100%]">
-                        <h2 class="white font-bold text-xxl lg:text-xl uppercase mb-4">Sobre Mi</h2>
-                        <p class="font-bold text-lg max-lg:text-sm mr-12 max-[624px]:mr-0 text-justify"> Soy una graduada de ingeniería en sistemas
+                    <div class="w-2/3 max-[624px]:w-[100%] max-lg:[w-100%] reveal">
+                        <h2 class="text-yellow font-bold text-xxl lg:text-xl uppercase mb-4">Sobre Mi</h2>
+                        <p class="font-semibold text-lg max-lg:text-sm mr-12 max-[624px]:mr-0 text-justify"> Soy una graduada de ingeniería en sistemas
                             computacionales, del Instituto Técnologico de Tijuana, en proceso de titulación, con
                             enfoque en el análisis, diseño y desarrollo de software. Con las habilidades de ser:
                             trabajadora, dedicada, creativa, honesta, autodidacta y trabajo en equipo.</p>
@@ -129,15 +72,14 @@
         <!-- Conocimientos -->
         <section class="bg-orange">
             <div class="h-screen flex flex-col justify-center items-center lg:py-14 max-[515px]:pt-4">
-                <h2 class="font-bold text-xl lg:text-xxl max-[337px]:text-base my-1 uppercase">Conocimientos</h2>
-                <div class="grid grid-cols-4 gap-2 mx-4 items-center">
-                    
+                <h2 class="font-bold text-xl lg:text-xxl max-[337px]:text-base my-1 uppercase reveal">Conocimientos</h2>
+                <div class="grid grid-cols-4 gap-2 mx-4 lg:py-8 items-center">                    
                     <!-- framework -->
                     <div class="flex items-center mt-8 mb-4 max-[515px]:mb-0 max-[664px]:mt-0 max-[664px]:mb-0 max-[664px]:col-span-4">
                         <img src="media/svg/frameworks-cms.svg" alt=""  class="max-[515px]:max-w-[8%]">
                         <h3 class="font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2"> Frameworks & CMS’s </h3>
                     </div>
-                    <div class="col-span-3 max-[664px]:col-span-4">
+                    <div class="col-span-3 lg:pl-[20%] max-[664px]:col-span-4">
                         <span class="grid grid-flow-col-dense auto-cols-min gap-2 max-[337px]:grid-rows-5 max-[432px]:grid-rows-4 max-[515px]:grid-rows-3 grid-rows-2 xl:grid-rows-1">
                         <span class="text-white rounded bg-[#092e20] p-1">Django</span>
                         <span class="text-white rounded bg-[#563d7c] p-1">Bootstrap</span>
@@ -156,7 +98,7 @@
                         <img src="media/svg/lang.svg" alt=""  class="max-[515px]:max-w-[5%]">
                         <h3 class="font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2"> Lenguajes</h3>
                     </div>
-                    <div  class="col-span-3 max-[664px]:col-span-4">
+                    <div  class="col-span-3 lg:pl-[20%] max-[664px]:col-span-4">
                         <span class="max-[363px]:grid max-[363px]:grid-flow-col-dense max-[363px]:auto-cols-min max-[363px]:gap-2 max-[663px]:grid-rows-2">
                         <span class="text-white rounded bg-[#0000ff] p-1">Java</span>
                         <span class="text-white rounded bg-[#239120] p-1">C#</span>
@@ -171,7 +113,7 @@
                         <img src="media/svg/version-control.svg" alt="" class="max-[515px]:max-w-[5%]">
                         <h3 class="font-bold ml-2 mt-1"> Control de versiones </h3>
                     </div>
-                    <div  class="col-span-3 max-[664px]:col-span-1 max-[515px]:col-span-4">
+                    <div  class="col-span-3 lg:pl-[20%] max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <span class="max-[664px]:grid max-[664px]:grid-flow-col-dense max-[664px]:auto-cols-min max-[664px]:gap-2 max-[664px]:grid-rows-2 max-[515px]:grid-rows-1">
                         <span class="text-white rounded bg-[#ff9900] p-1">Gitlab</span>
                         <span class="text-white rounded bg-black p-1">Github</span>
@@ -179,11 +121,11 @@
                     </span>
                     </div>
                     <!-- BD -->
-                    <div class="flex items-center mt-8 max-[515px]:mt-2 max-[337px]:mt-0 m-4 max-[515px]:m-1 max-[515px]:m-0 max-[664px]:col-span-1 max-[515px]:col-span-4">
+                    <div class="flex items-center mt-8 max-[515px]:mt-2 max-[337px]:mt-0 m-4 lg:m-0 max-[515px]:m-1 max-[515px]:m-0 max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <img src="media/svg/db.svg" alt="" width="50px" class="max-[515px]:max-w-[6%]">
                         <h3 class="font-bold ml-2 mt-1 max-[515px]:mt-0"> Base de datos </h3>
                     </div>
-                    <div  class="col-span-3 max-[664px]:col-span-1 max-[515px]:col-span-4">
+                    <div  class="col-span-3 lg:pl-[20%] max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <span class="rounded bg-[#0000ff] p-1">SQL server</span>
                     </div>
 
@@ -194,7 +136,7 @@
         <section class="bg-lesspink static">
             <div class="h-screen">
                 <div class="flex flex-col items-center justify-center text-center">
-                    <h2 class="font-bold text-xxl my-1 mt-12 mb-4 uppercase">Proyectos</h2>
+                    <h2 class="font-bold text-xxl my-1 mt-12 mb-4 uppercase reveal">Proyectos</h2>
                 </div>
                 <!-- Swiper -->
                 <div class="hidden lg:block body">
@@ -354,14 +296,14 @@
                                         <p class="uppercase text-sm ">Proyecto desarrollado con framework DJANGO</p>
                                         <!-- multimedia -->
                                         <div class="flex flex-col space-y-1">
-                                            <span>
-                                                <img src="media/gif/reportada/4Inicio.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span  class="flex justify-center">
+                                                <img src="media/gif/reportada/4Inicio.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/reportada/5PizzasyPaquetes.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/reportada/5PizzasyPaquetes.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/reportada/6SucursalesSesion.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/reportada/6SucursalesSesion.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
                                         </div>
                                         <!-- descripcion -->
@@ -385,14 +327,14 @@
                                         <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO CON FRAMEWORK DJANGO.</p>
                                         <!-- multimedia -->
                                         <div class="flex flex-col space-y-2">
-                                            <span>
-                                                <img src="media/gif/dogs/7Inicio.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                            <img src="media/gif/dogs/7Inicio.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/dogs/8Solicitudes.gif" class="img-fluid img-fluid-sm"alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/dogs/8Solicitudes.gif" class="img-fluid-device img-fluid-sm"alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/dogs/9MascotaAdopcionNewUser.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/dogs/9MascotaAdopcionNewUser.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
                                         </div>
                                         <!-- descripcion -->
@@ -412,14 +354,14 @@
                                         <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO EN VISUAL STUDIO C# Y SQL SERVER.</p>
                                         <!-- multimedia -->
                                         <div class="flex flex-col space-y-2">
-                                            <span>
-                                                <img src="media/gif/medic/1SesioNotify.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/medic/1SesioNotify.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/medic/2Agenda.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/medic/2Agenda.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/medic/3Inventario.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/medic/3Inventario.gif" class="img-fluid-device img-fluid-sm" alt="thumbnail">
                                             </span>
                                         </div>
                                         <!-- descripcion -->
@@ -446,14 +388,14 @@
                                         <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO EN LARAVEL 8 Y MYSQL.</p>
                                         <!-- multimedia -->
                                         <div class="flex flex-col space-y-2">
-                                            <span>
-                                                <img src="media/gif/store/10inicio.gif" class="img-fluid img-fluid-xs" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/store/10inicio.gif" class="img-fluid-device img-fluid-xs" alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/store/11menu.gif" class="img-fluid img-fluid-xs" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/store/11menu.gif" class="img-fluid-device img-fluid-xs" alt="thumbnail">
                                             </span>
-                                            <span>
-                                                <img src="media/gif/store/12crearV.gif" class="img-fluid img-fluid-xs" alt="thumbnail">
+                                            <span class="flex justify-center">
+                                                <img src="media/gif/store/12crearV.gif" class="img-fluid-device img-fluid-xs" alt="thumbnail">
                                             </span>
                                         </div>
                                         <!-- descripcion -->
@@ -475,7 +417,7 @@
         <section class="bg-yellow">
             <div class="h-screen">
                 <div class="flex flex-col justify-center items-center h-screen">
-                    <h2 class="font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4">Contacto</h2>
+                    <h2 class="font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4 reveal">Contacto</h2>
 
                     <div class="flex flex-row max-lg:flex-col space-x-16 max-lg:space-x-0 max-lg:space-y-8 justify-center">
                         <a class="transition ease-in-out hover:scale-110 duration-300" href="https://discord.gg/MichelleEspinoza" target="_blank" rel="nofollow">
@@ -525,30 +467,7 @@
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script>
-        var swiperW = new Swiper(".mySwiper", {
-          direction: "vertical",
-          slidesPerView: 1,
-          spaceBetween: 30,
-          mousewheel: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        }
-        );
-        var swiperD = new Swiper(".mySwiperDevice", {
-          direction: "horizontal",
-          slidesPerView: 1.2,
-          spaceBetween: 0,
-          mousewheel: true,
-          pagination: {
-            el: ".swiper-pagination-device",
-            clickable: true,
-          },
-        });
-      </script>
-      
+    <script src="/swiper.js"></script>    
 </body>
 
 </html>

@@ -10,9 +10,9 @@ body {
 }
 
 .body {
-    position: absolute;
-    height: 85%;
-    width: 100%;
+  position: absolute;
+  height: 85%;
+  width: 100%;
 }
 
 .body-device {
@@ -22,21 +22,21 @@ body {
 }
 
 .swiper {
-    width: 100%;
-    height: 90%;
-  }
+  width: 100%;
+  height: 90%;
+}
 
-  .swiper-slide {
-    text-align: center;
-    background: #f07995;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.swiper-slide {
+  text-align: center;
+  background: #f07995;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .img-contact {
-    height: 185% !important;
-    max-width: 165% !important;
+  height: 185% !important;
+  max-width: 165% !important;
 }
 
 .img-fluid-xs {
@@ -60,6 +60,21 @@ body {
 }
  
 .img-fluid:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
+.img-fluid-device:hover {
+  transform: scale(2.2);
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(160px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
