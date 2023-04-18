@@ -80,10 +80,10 @@
         <header>        
         <div class="w-screen bg-purple">
             <!--lang-->
-            <span class="flex justify-between mr-4">
+            <span class="flex justify-between mr-4 max-[320px]:mr-0">
                 <a class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4"
                     href="indexEn.html">
-                    <img src="https://images.emojiterra.com/twitter/512px/1f1f2-1f1fd.png" alt=""" width="20"
+                    <img src="https://images.emojiterra.com/twitter/512px/1f1f2-1f1fd.png" alt="lang" width="20"
                         class="mx-2 my-1">
                     <span class="text-black mr-2 my-1">ES</span>
                 </a>
@@ -94,82 +94,96 @@
                 </a>
             </span>
         </div>
-        <div class="flex min-h-screen items-center justify-center bg-purple static">
+        <div class="hidden lg:flex min-h-screen items-center justify-center bg-purple static">
             <span class="absolute pr-[44vw] laptop:pr-[53vw]"><img src="/media/svg/avatar.svg" alt="avatar" width="150px"></span>
             <div>
                 <h6 class="font-bold text-center text-uppercase text-xxl xl:text-[48px] mb-4">Portafolio</h6>
               <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl xl:text-xxl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
             </div>
           </div>
+        <div class="lg:hidden min-h-screen bg-purple flex flex-col items-center">
+            <span class=""><img src="/media/svg/avatar-device.svg" alt="avatar" width="180px"></span>
+                <div>
+                    <h6 class="font-bold text-center text-uppercase text-xxl max-[458px]:text-lg xl:text-[48px] mb-4">Portafolio</h6>
+                    <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl max-[320px]:text-sm max-[458px]:text-base xl:text-xxl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
+                </div>
+        </div>
         </header>
         <!-- Sobre mi -->
         <section class="bg-pink">
             <div class="h-screen">
-                <div class="flex justify-between items-center mx-52 laptop:mx-20 xl:mx-52 h-screen">
-                    <div class="w-2/3">
-                        <h2 class="white font-bold text-xxl uppercase mb-4">Sobre Mi</h2>
-                        <p class="font-bold text-lg mr-12 text-justify"> Soy una graduada de ingeniería en sistemas
+                <div class="flex max-lg:flex-col justify-between max-lg:justify-center items-center mx-2 laptop:mx-20 xl:mx-52 h-screen">
+                    <div class="w-2/3 max-[624px]:w-[100%] max-lg:[w-100%]">
+                        <h2 class="white font-bold text-xxl lg:text-xl uppercase mb-4">Sobre Mi</h2>
+                        <p class="font-bold text-lg max-lg:text-sm mr-12 max-[624px]:mr-0 text-justify"> Soy una graduada de ingeniería en sistemas
                             computacionales, del Instituto Técnologico de Tijuana, en proceso de titulación, con
                             enfoque en el análisis, diseño y desarrollo de software. Con las habilidades de ser:
                             trabajadora, dedicada, creativa, honesta, autodidacta y trabajo en equipo.</p>
-                    </div>
-                    <div class="w-1/3">
-                        <img src="media/logos/profile-white.svg" alt="">
+                    </div> 
+                    <div class="w-1/3 max-[624px]:w-[100%] max-lg:[w-100%]">
+                        <img src="media/logos/profile-white.svg" alt="" class="max-[624px]:w-[53%] max-[410px]:w-[80%]">
                     </div>
                 </div>
             </div>
         </section>
         <!-- Conocimientos -->
         <section class="bg-orange">
-            <div class="h-screen flex flex-col justify-center">
-                <div class="flex flex-col items-center justify-center">
-                    <h2 class="font-bold text-xl lg:text-xxl my-1 mb-4 uppercase">Conocimientos</h2>
-                    <!-- Lan-->
-                    <div class="flex">
-                        <img src="media/svg/lang.svg" alt="">
-                        <h3 class="font-bold ml-2 m-4"> Lenguajes</h3>
+            <div class="h-screen flex flex-col justify-center items-center lg:py-14 max-[515px]:pt-4">
+                <h2 class="font-bold text-xl lg:text-xxl max-[337px]:text-base my-1 uppercase">Conocimientos</h2>
+                <div class="grid grid-cols-4 gap-2 mx-4 items-center">
+                    
+                    <!-- framework -->
+                    <div class="flex items-center mt-8 mb-4 max-[515px]:mb-0 max-[664px]:mt-0 max-[664px]:mb-0 max-[664px]:col-span-4">
+                        <img src="media/svg/frameworks-cms.svg" alt=""  class="max-[515px]:max-w-[8%]">
+                        <h3 class="font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2"> Frameworks & CMS’s </h3>
                     </div>
-                    <div>
+                    <div class="col-span-3 max-[664px]:col-span-4">
+                        <span class="grid grid-flow-col-dense auto-cols-min gap-2 max-[337px]:grid-rows-5 max-[432px]:grid-rows-4 max-[515px]:grid-rows-3 grid-rows-2 xl:grid-rows-1">
+                        <span class="text-white rounded bg-[#092e20] p-1">Django</span>
+                        <span class="text-white rounded bg-[#563d7c] p-1">Bootstrap</span>
+                        <span class="text-white rounded bg-[#5c2d91] p-1">ASP.net</span>
+                        <span class="text-white rounded bg-[#35495e] p-1">Vue2.JS</span>
+                        <span class="text-white rounded bg-[#44cc11] p-1">Entity&nbsp;Framework</span>
+                        <span class="text-white rounded bg-[#35495e] p-1">Vue3.js</span>
+                        <span class="text-white rounded bg-[#fcc624] p-1">Syncfusion</span>
+                        <span class="text-white rounded bg-[#0000ff] p-1">NUXT3</span>
+                        <span class="text-white rounded bg-[#38b2ac] p-1">Tailwind&nbsp;CSS</span>
+                        <span class="text-white rounded bg-[#dd0031] p-1">Angular&nbsp;14</span>
+                    </span>
+                    </div>
+                    <!-- Lan-->
+                    <div class="flex max-[664px]:col-span-4">
+                        <img src="media/svg/lang.svg" alt=""  class="max-[515px]:max-w-[5%]">
+                        <h3 class="font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2"> Lenguajes</h3>
+                    </div>
+                    <div  class="col-span-3 max-[664px]:col-span-4">
+                        <span class="max-[363px]:grid max-[363px]:grid-flow-col-dense max-[363px]:auto-cols-min max-[363px]:gap-2 max-[663px]:grid-rows-2">
                         <span class="text-white rounded bg-[#0000ff] p-1">Java</span>
                         <span class="text-white rounded bg-[#239120] p-1">C#</span>
                         <span class="text-white rounded bg-[#dd0031] p-1">HTML</span>
                         <span class="text-white rounded bg-[#323330] p-1">JavaScript</span>
                         <span class="text-white rounded bg-[#1572b6] p-1">CSS</span>
                         <span class="text-white rounded bg-[#35495e] p-1">TypeScript</span>
-                    </div>
-                    <!-- framework -->
-                    <div class="flex items-center mt-8 mb-4">
-                        <img src="media/svg/frameworks-cms.svg" alt="">
-                        <h3 class="font-bold ml-2 m-4"> Frameworks & CMS’s </h3>
-                    </div>
-                    <div>
-                        <span class="text-white rounded bg-[#092e20] p-1">Django</span>
-                        <span class="text-white rounded bg-[#563d7c] p-1">Bootstrap</span>
-                        <span class="text-white rounded bg-[#5c2d91] p-1">ASP.net</span>
-                        <span class="text-white rounded bg-[#35495e] p-1">Vue2.JS</span>
-                        <span class="text-white rounded bg-[#44cc11] p-1">Entity Framework</span>
-                        <span class="text-white rounded bg-[#35495e] p-1">Vue3.js</span>
-                        <span class="text-white rounded bg-[#fcc624] p-1">Syncfusion</span>
-                        <span class="text-white rounded bg-[#0000ff] p-1">NUXT3</span>
-                        <span class="text-white rounded bg-[#38b2ac] p-1">Tailwind CSS</span>
-                        <span class="text-white rounded bg-[#dd0031] p-1">Angular 14</span>
+                    </span>
                     </div>
                     <!-- Control version -->
-                    <div class="flex items-center mt-8 mb-4">
-                        <img src="media/svg/version-control.svg" alt="">
+                    <div class="flex items-center mt-8 max-[515px]:mt-2 max-[337px]:mt-0 mb-4 max-[515px]:mb-1 max-[337px]:mb-0 max-[664px]:col-span-1 max-[515px]:col-span-4">
+                        <img src="media/svg/version-control.svg" alt="" class="max-[515px]:max-w-[5%]">
                         <h3 class="font-bold ml-2 mt-1"> Control de versiones </h3>
                     </div>
-                    <div>
+                    <div  class="col-span-3 max-[664px]:col-span-1 max-[515px]:col-span-4">
+                        <span class="max-[664px]:grid max-[664px]:grid-flow-col-dense max-[664px]:auto-cols-min max-[664px]:gap-2 max-[664px]:grid-rows-2 max-[515px]:grid-rows-1">
                         <span class="text-white rounded bg-[#ff9900] p-1">Gitlab</span>
                         <span class="text-white rounded bg-black p-1">Github</span>
                         <span class="text-white rounded bg-[#00c4cc] p-1">DevOps</span>
+                    </span>
                     </div>
                     <!-- BD -->
-                    <div class="flex items-center mt-8 m-4">
-                        <img src="media/svg/db.svg" alt="" width="50px">
-                        <h3 class="font-bold ml-2 mt-1"> Base de datos </h3>
+                    <div class="flex items-center mt-8 max-[515px]:mt-2 max-[337px]:mt-0 m-4 max-[515px]:m-1 max-[515px]:m-0 max-[664px]:col-span-1 max-[515px]:col-span-4">
+                        <img src="media/svg/db.svg" alt="" width="50px" class="max-[515px]:max-w-[6%]">
+                        <h3 class="font-bold ml-2 mt-1 max-[515px]:mt-0"> Base de datos </h3>
                     </div>
-                    <div>
+                    <div  class="col-span-3 max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <span class="rounded bg-[#0000ff] p-1">SQL server</span>
                     </div>
 
@@ -183,8 +197,8 @@
                     <h2 class="font-bold text-xxl my-1 mt-12 mb-4 uppercase">Proyectos</h2>
                 </div>
                 <!-- Swiper -->
-                <div class="body">
-                    <div class="swiper mySwiper">
+                <div class="hidden lg:block body">
+                    <div class="swiper swiperW mySwiper">
                        <div class="swiper-wrapper">
                          <div class="swiper-slide">
                             <!--inicio::La reportada -->
@@ -315,14 +329,145 @@
                             </div>
                             <!-- fin::Refugio de perros -->
                          </div>
-                         <!--<div class="swiper-slide">Slide 5</div>
-                         <div class="swiper-slide">Slide 6</div>
-                         <div class="swiper-slide">Slide 7</div>
-                         <div class="swiper-slide">Slide 8</div>
-                         <div class="swiper-slide">Slide 9</div>-->
+                         <!--<div class="swiper-slide">Slide 5</div>-->
                        </div>
-                       <div class="swiper-pagination"></div>
+                       <div class="swiper-pagination">
+                       </div>
                      </div>
+                </div>
+                <!--swipper device-->
+                <div class="lg:hidden body-device">
+                    <div class="swiper swiperD mySwiperDevice">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
+                                    <img src="media/logos/logo2.svg" alt="" width="9.5%">
+                                    <h3 class="flex text-white text-base font-bold">
+                                        &nbsp;Pizzeria: La reportada&nbsp;
+                                        <a href="https://github.com/MichelleEspinoza/django-project-master" target="_blank" class="text-secondary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                            </svg>
+                                        </a>
+                                    </h3>
+                                        <p class="uppercase text-sm ">Proyecto desarrollado con framework DJANGO</p>
+                                        <!-- multimedia -->
+                                        <div class="flex flex-col space-y-1">
+                                            <span>
+                                                <img src="media/gif/reportada/4Inicio.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/reportada/5PizzasyPaquetes.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/reportada/6SucursalesSesion.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                        </div>
+                                        <!-- descripcion -->
+                                        <div class="mt-2 text-sm">
+                                            <p>Proyecto desarrollado dentro de materia: programación web</p>
+                                            <p><span class="font-bold">Responsabilidad:</span> Frontend</p>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
+                                    <img src="media/logos/logo1.png" alt="" width="9.5%">
+                                    <h3 class="flex text-white text-base font-bold m-1">
+                                        &nbsp;Refugio de perros&nbsp;
+                                        <a href="https://github.com/MichelleEspinoza/refugio-de-perros" target="_blank" class="text-secondary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                            </svg></a>
+                                    </h3>
+                                        <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO CON FRAMEWORK DJANGO.</p>
+                                        <!-- multimedia -->
+                                        <div class="flex flex-col space-y-2">
+                                            <span>
+                                                <img src="media/gif/dogs/7Inicio.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/dogs/8Solicitudes.gif" class="img-fluid img-fluid-sm"alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/dogs/9MascotaAdopcionNewUser.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                        </div>
+                                        <!-- descripcion -->
+                                        <div class="mt-2 text-sm">
+                                            <p>Proyecto desarrollado: Independiente.</p>
+                                            <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(python)</p>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!--inicio::mediobilogica -->
+                                <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
+                                    <img src="media/logos/logo3.ico" alt="" width="9.5%" height="120">
+                                    <h3 class="flex text-white text-base font-bold m-1">
+                                        &nbsp;Sistema de gestión de inventario y agenda para clinica medibiologica&nbsp;
+                                    </h3>
+                                        <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO EN VISUAL STUDIO C# Y SQL SERVER.</p>
+                                        <!-- multimedia -->
+                                        <div class="flex flex-col space-y-2">
+                                            <span>
+                                                <img src="media/gif/medic/1SesioNotify.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/medic/2Agenda.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/medic/3Inventario.gif" class="img-fluid img-fluid-sm" alt="thumbnail">
+                                            </span>
+                                        </div>
+                                        <!-- descripcion -->
+                                        <div class="mt-2 text-sm">
+                                            <p>Desarrollado como proyecto de residencia.</p>
+                                            <p><span class="font-bold">Responsabilidad:</span>Análisis y diseño de base de datos,creación de procedimientos almacenados y programación en c#.</p>
+                                        </div>
+                                </div>
+                                <!-- fin::mediobilogica -->
+                             </div>
+                             <div class="swiper-slide">
+                                <!--inicio:: tienda  -->
+                                <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
+                                    <img src="media/logos/logo4.png" alt="" width="9%" height="120">
+                                    <h3 class="flex text-white text-base font-bold m-1">
+                                        &nbsp;Sistema de gestión para tienda&nbsp;
+                                        <a href="https://github.com/MichelleEspinoza/michelle-blogsi" target="_blank" class="text-secondary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                            </svg>
+                                        </a>
+                                    </h3>
+                                        <p class="uppercase m-1 text-sm">PROYECTO DESARROLLADO EN LARAVEL 8 Y MYSQL.</p>
+                                        <!-- multimedia -->
+                                        <div class="flex flex-col space-y-2">
+                                            <span>
+                                                <img src="media/gif/store/10inicio.gif" class="img-fluid img-fluid-xs" alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/store/11menu.gif" class="img-fluid img-fluid-xs" alt="thumbnail">
+                                            </span>
+                                            <span>
+                                                <img src="media/gif/store/12crearV.gif" class="img-fluid img-fluid-xs" alt="thumbnail">
+                                            </span>
+                                        </div>
+                                        <!-- descripcion -->
+                                        <div class="mt-2 text-sm">
+                                            <p>Desarrollado como proyecto: Independiente.</p>
+                                            <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(PHP 8.0.2)</p>
+                                        </div>
+                                </div>
+                                <!-- fin::Refugio de perros -->
+                             </div>
+                            <div class="swiper-pagination-device">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -332,7 +477,7 @@
                 <div class="flex flex-col justify-center items-center h-screen">
                     <h2 class="font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4">Contacto</h2>
 
-                    <div class="flex flex-row justify-center space-x-16">
+                    <div class="flex flex-row max-lg:flex-col space-x-16 max-lg:space-x-0 max-lg:space-y-8 justify-center">
                         <a class="transition ease-in-out hover:scale-110 duration-300" href="https://discord.gg/MichelleEspinoza" target="_blank" rel="nofollow">
                             <img alt="Discord" class="img-contact" src="https://camo.githubusercontent.com/9c1f6abe034a366f0b32065ddd7016cfa744156cb1dfd111f9921ff04d9b21b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d2532333732383944412e7376673f6c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465"
                             data-canonical-src="https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&amp;logoColor=white">
@@ -364,12 +509,12 @@
         <!-- footer -->
         <footer class="px-4 text-white bg-blue font-semibold">
             <div class="bg-blue">
-                <span class="flex items-center pt-2">
-                    <img src="/media/logos/icon-me.png" alt="logo" width="170px">
-                    <span class="ml-3">
-                        <p class="mb-3"><span class="bg-[#dc3545] rounded-md p-1 mr-2">Gmail</span>estephani.espinoza17@tectijuana.edu.mx</p>
-                        <p><span class="bg-[#28a745] rounded-md p-1 mr-2">Tel.</span>+52 664 173 22 66</p></span>
-                    
+                <span class="flex max-lg:flex-col items-center max-lg:items-start pt-2">
+                    <img src="/media/logos/icon-me.png" alt="logo" width="150px">
+                    <span class="ml-3 max-lg:mt-2">
+                        <p class="mb-3 max-[458px]:flex max-[458px]:flex-col"><span class="bg-[#dc3545] rounded-md p-1 mr-2 w-[18%] max-[334px]:w-[24%]">Gmail</span><span class="max-[334px]:text-[12px]">estephani.espinoza17@tectijuana.edu.mx</span></p>
+                        <p class="max-[458px]:flex max-[458px]:flex-col max-[458px]:mb-8"><span class="bg-[#28a745] rounded-md p-1 mr-2 w-[18%]">Tel.</span>+52 664 173 22 66</p>
+                    </span>
                 </span>
                 <p  class="flex pt-0 pb-3 justify-center">
                     Copyright © 2023 Michelle Espinoza
@@ -381,13 +526,24 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiperW = new Swiper(".mySwiper", {
           direction: "vertical",
           slidesPerView: 1,
           spaceBetween: 30,
           mousewheel: true,
           pagination: {
             el: ".swiper-pagination",
+            clickable: true,
+          },
+        }
+        );
+        var swiperD = new Swiper(".mySwiperDevice", {
+          direction: "horizontal",
+          slidesPerView: 1.2,
+          spaceBetween: 0,
+          mousewheel: true,
+          pagination: {
+            el: ".swiper-pagination-device",
             clickable: true,
           },
         });
