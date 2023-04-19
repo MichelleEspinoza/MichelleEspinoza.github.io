@@ -113,7 +113,7 @@
 
 @keyframes appearSmile {
   from {
-    transform: translateY(-18%);
+    transform: translateY(-22%);
   }
   to{
     transform: translateY(0%);

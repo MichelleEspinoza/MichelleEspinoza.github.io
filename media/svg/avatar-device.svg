@@ -106,13 +106,13 @@
     transform: translateY(0%);
   }
   to{
-    transform: translateY(30%);
+    transform: translateY(33%);
   }
 }
 
 @keyframes appearSmile {
   from {
-    transform: translateY(-18%);
+    transform: translateY(-24%);
   }
   to{
     transform: translateY(0%);
