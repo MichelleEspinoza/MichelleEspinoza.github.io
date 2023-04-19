@@ -48,6 +48,7 @@ tailwind.config = {
           Poppins: ['Roboto', 'sans-serif']
       },
       fontSize: {
+          xm: ['10px', '14px'],
           sm: ['14px', '24px'],
           base: ['18px', '24px'],
           lg: ['22px', '27px'],
