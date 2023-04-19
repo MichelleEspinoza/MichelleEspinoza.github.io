@@ -47,6 +47,10 @@ body {
   width: 32%;
 }
 
+.img-fluid-md {
+  max-width: 60% !important;
+}
+
 .img-fluid-lg {
   width: 90%;
 }
