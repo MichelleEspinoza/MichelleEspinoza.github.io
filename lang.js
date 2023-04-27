@@ -54,18 +54,20 @@ const jsonES = {
  const btnES=document.querySelector('#ES');
  const btnEN=document.querySelector('#EN');
 
+ changeLang(jsonES);
+
  btnES.addEventListener("click", function() {
-    for (let key in jsonES) {
-        document.querySelector('.' + key).textContent = jsonES[key]
-    }
-    btnES.classList.add("hidden");
-    btnEN.classList.remove("hidden");
+  changeLang(jsonES, btnES, btnEN);
   });
 
   btnEN.addEventListener("click", function() {
-    for (let key in jsonEN) {
-        document.querySelector('.' + key).textContent = jsonEN[key]
-    }
-    btnEN.classList.add("hidden");
-    btnES.classList.remove("hidden");
+    changeLang(jsonEN, btnEN, btnES);
   });
+
+  function changeLang(lang, btnIn,btnOut){
+    for (let key in lang) {
+      document.querySelector('.' + key).textContent = lang[key]
+    }
+    btnIn?.classList.add("hidden");
+    btnOut?.classList.remove("hidden");
+  }
