@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <link href="main.css" rel="stylesheet">
     <!--icon-->
     <link rel="icon" type="png" href="icon.ico" />
-    <title>Portafolio: Michelle Espinoza</title>
+    <title class="portfolio">Portafolio: Michelle Espinoza</title>
 </head>
 
 <body>
@@ -23,31 +23,38 @@
         <div class="w-screen bg-purple">
             <!--lang-->
             <span class="flex justify-between mr-4 max-[320px]:mr-0">
-                <a class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4"
-                    href="indexEn.html">
+                <a id="EN" class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4"
+                    href="">
                     <img src="http://www.etimpjeans.com/wp-content/uploads/2019/01/eeuu.png" alt="lang" width="20"
                         class="mx-2 my-1">
                     <span class="text-black mr-2 my-1">EN</span>
                 </a>
+                <a id="ES" class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4 hidden"
+                    href="">
+                    <img src="https://images.emojiterra.com/twitter/512px/1f1f2-1f1fd.png" alt="lang" width="20"
+                        class="mx-2 my-1">
+                    <span class="text-black mr-2 my-1">ES</span>
+                </a>
+
                 <a class="flex bg-lesspink rounded-md border border-white shadow-sm shadow-white m-4"
                     href="media/cv/Michelle Espinoza-Español.pdf" target="_blank">
                     <img src="media/svg/CV.svg" alt="" width="20" class="animate-bounce mx-2 my-1">
-                    <span class="text-black mr-2 my-1">Descargar CV - ES</span>
+                    <span class="downloadCV text-black mr-2 my-1">Descargar CV - ES</span>
                 </a>
             </span>
         </div>
         <div class="hidden lg:flex min-h-screen items-center justify-center bg-purple static">
             <span class="absolute pr-[44vw] laptop:pr-[53vw] lg:pr-[53vw]"><img src="/media/svg/avatar.svg" alt="avatar" width="150px"></span>
             <div>
-                <h6 class="font-bold text-center text-uppercase text-xxl xl:text-[48px] mb-4">Portafolio</h6>
-              <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl xl:text-xxl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
+                <h6 class="portfolioTitle font-bold text-center text-uppercase text-xxl xl:text-[48px] mb-4">Portafolio</h6>
+                <h1 class="helloTitle animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl xl:text-xxl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
             </div>
           </div>
         <div class="lg:hidden min-h-screen bg-purple flex flex-col items-center justify-center">
             <span class=""><img src="/media/svg/avatar-device.svg" alt="avatar" width="200vw"></span>
                 <div>
-                    <h6 class="font-bold text-center text-uppercase text-xxl max-[458px]:text-lg xl:text-[48px] mb-4">Portafolio</h6>
-                    <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl max-[320px]:text-sm max-[458px]:text-base xl:text-xxl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
+                    <h6 class="portfolioTitle font-bold text-center text-uppercase text-xxl max-[458px]:text-lg xl:text-[48px] mb-4">Portafolio</h6>
+                    <h1 class="helloTitle animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl max-[320px]:text-sm max-[458px]:text-base xl:text-xxl text-white font-bold">¡Hey hola soy, Michelle Espinoza!</h1>
                 </div>
         </div>
         </header>
@@ -57,8 +64,8 @@
                 <div class="absolute"><img src="/media/svg/rainbow.svg" class="w-[40%] max-[624px]:hidden" alt=""></div>
                 <div class="flex max-[624px]:px-8 lg:px-12 max-lg:flex-col justify-between max-lg:justify-center items-center mx-2 laptop:mx-20 xl:mx-52 h-screen">
                     <div class="w-2/3 max-[624px]:w-[100%] max-lg:[w-100%] reveal">
-                        <h2 class="text-yellow font-bold text-xxl lg:text-xl uppercase mb-4">Sobre Mi</h2>
-                        <p class="font-semibold text-lg max-lg:text-sm mr-12 max-[624px]:mr-0 text-justify"> Soy una graduada de ingeniería en sistemas
+                        <h2 class="aboutMe text-yellow font-bold text-xxl lg:text-xl uppercase mb-4">Sobre Mi</h2>
+                        <p class="aboutMeParagraph font-semibold text-lg max-lg:text-sm mr-12 max-[624px]:mr-0 text-justify"> Soy una graduada de ingeniería en sistemas
                             computacionales, del Instituto Técnologico de Tijuana, en proceso de titulación, con
                             enfoque en el análisis, diseño y desarrollo de software. Con las habilidades de ser:
                             trabajadora, dedicada, creativa, honesta, autodidacta y trabajo en equipo.</p>
@@ -72,12 +79,12 @@
         <!-- Conocimientos -->
         <section class="bg-orange">
             <div class="h-screen flex flex-col justify-center items-center lg:py-14 max-[515px]:pt-4">
-                <h2 class="font-bold text-xl lg:text-xxl max-[337px]:text-base my-1 uppercase reveal">Conocimientos</h2>
+                <h2 class="knowledgesTitle font-bold text-xl lg:text-xxl max-[337px]:text-base my-1 uppercase reveal">Conocimientos</h2>
                 <div class="min-lg:my-8 grid grid-cols-4 gap-2 mx-4 lg:py-8 items-center">                    
                     <!-- framework -->
                     <div class="flex items-center mt-8 mb-4 max-[515px]:mb-0 max-[664px]:mt-0 max-[664px]:mb-0 max-[664px]:col-span-4">
                         <img src="media/svg/frameworks-cms.svg" alt=""  class="max-[515px]:max-w-[8%]">
-                        <h3 class="font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2"> Frameworks & CMS’s </h3>
+                        <h3 class="font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2">Frameworks & CMS’s</h3>
                     </div>
                     <div class="col-span-3 lg:pl-[20%] max-[664px]:col-span-4">
                         <span class="grid grid-flow-col-dense auto-cols-min gap-2 max-[337px]:grid-rows-5 max-[432px]:grid-rows-4 max-[515px]:grid-rows-3 grid-rows-2 xl:grid-rows-1">
@@ -96,7 +103,7 @@
                     <!-- Lan-->
                     <div class="flex max-[664px]:col-span-4">
                         <img src="media/svg/lang.svg" alt=""  class="max-[515px]:max-w-[5%]">
-                        <h3 class="font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2"> Lenguajes</h3>
+                        <h3 class="languagesTitle font-bold ml-2 m-4 max-[515px]:m-0 max-[515px]:ml-2">Lenguajes</h3>
                     </div>
                     <div  class="col-span-3 lg:pl-[20%] max-[664px]:col-span-4">
                         <span class="max-[363px]:grid max-[363px]:grid-flow-col-dense max-[363px]:auto-cols-min max-[363px]:gap-2 max-[663px]:grid-rows-2">
@@ -111,7 +118,7 @@
                     <!-- Control version -->
                     <div class="flex items-center mt-8 max-[515px]:mt-2 max-[337px]:mt-0 mb-4 max-[515px]:mb-1 max-[337px]:mb-0 max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <img src="media/svg/version-control.svg" alt="" class="max-[515px]:max-w-[5%]">
-                        <h3 class="font-bold ml-2 mt-1"> Control de versiones </h3>
+                        <h3 class="controlVersionTitle font-bold ml-2 mt-1">Control de versiones</h3>
                     </div>
                     <div  class="col-span-3 lg:pl-[20%] max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <span class="max-[664px]:grid max-[664px]:grid-flow-col-dense max-[664px]:auto-cols-min max-[664px]:gap-2 max-[664px]:grid-rows-2 max-[515px]:grid-rows-1">
@@ -123,7 +130,7 @@
                     <!-- BD -->
                     <div class="flex items-center mt-8 max-[515px]:mt-2 max-[337px]:mt-0 m-4 lg:m-0 max-[515px]:m-1 max-[515px]:m-0 max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <img src="media/svg/db.svg" alt="" width="50px" class="max-[515px]:max-w-[6%]">
-                        <h3 class="font-bold ml-2 mt-1 max-[515px]:mt-0"> Base de datos </h3>
+                        <h3 class="dataBaseTitle font-bold ml-2 mt-1 max-[515px]:mt-0">Base de datos</h3>
                     </div>
                     <div  class="col-span-3 lg:pl-[20%] max-[664px]:col-span-1 max-[515px]:col-span-4">
                         <span class="rounded bg-[#0000ff] p-1">SQL server</span>
@@ -136,7 +143,7 @@
         <section class="bg-lesspink static">
             <div class="h-screen">
                 <div class="flex flex-col items-center justify-center text-center">
-                    <h2 class="font-bold text-xxl my-1 mt-12 mb-4 uppercase reveal">Proyectos</h2>
+                    <h2 class="projectsTitle font-bold text-xxl my-1 mt-12 mb-4 uppercase reveal">Proyectos</h2>
                 </div>
                 <!-- Swiper -->
                 <div class="hidden lg:block body">
@@ -155,8 +162,8 @@
                                 <!-- descripcion -->
                                 <div class="text-sm">
                                     <p>Stack: NUXT3</p>
-                                    <p>Proyecto desarrollado dentro de 1Delivery</p>
-                                    <p><span class="font-bold">Responsabilidad:</span> Frontend</p>
+                                    <p class="projectSCDescription">Proyecto desarrollado dentro de 1Delivery</p>
+                                    <p><span class="projectsRole font-bold">Responsabilidad:</span> Frontend</p>
                                 </div>
                              </div>
                         </div>
@@ -188,8 +195,8 @@
                                     </div>
                                     <!-- descripcion -->
                                     <div class="mt-2 text-sm xl:text-lg">
-                                        <p>Proyecto desarrollado dentro de materia: programación web</p>
-                                        <p><span class="font-bold">Responsabilidad:</span> Frontend</p>
+                                        <p class="projectPizzeriaDescription">Proyecto desarrollado dentro de materia: programación web</p>
+                                        <p><span class="projectsRole font-bold">Responsabilidad:</span> Frontend</p>
                                     </div>
                             </div>
                             <!-- fin::La reportada -->
@@ -198,7 +205,7 @@
                             <!--inicio::Refugio de perros -->
                             <div class="flex flex-col items-center content-center">
                                 <img src="media/logos/logo1.png" alt="" width="9.5%">
-                                <h3 class="flex text-white text-base xl:text-lg font-bold m-1">
+                                <h3 class="projectDogshelterTitle flex text-white text-base xl:text-lg font-bold m-1">
                                     &nbsp;Refugio de perros&nbsp;
                                     <a href="https://github.com/MichelleEspinoza/refugio-de-perros" target="_blank" class="text-secondary">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -221,8 +228,8 @@
                                     </div>
                                     <!-- descripcion -->
                                     <div class="mt-2 text-sm xl:text-lg">
-                                        <p>Proyecto desarrollado: Independiente.</p>
-                                        <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(python)</p>
+                                        <p class="projectDogshelterDescription">Proyecto desarrollado: Independiente.</p>
+                                        <p><span class="projectsRole font-bold">Responsabilidad:</span> Frontend & Backend(python)</p>
                                     </div>
                             </div>
                             <!-- fin::Refugio de perros -->
@@ -231,7 +238,7 @@
                             <!--inicio::mediobilogica -->
                             <div class="flex flex-col items-center content-center">
                                 <img src="media/logos/logo3.ico" alt="" width="9.5%" height="120">
-                                <h3 class="flex text-white text-base xl:text-lg font-bold m-1">
+                                <h3 class="projectMedibiologicaTitle flex text-white text-base xl:text-lg font-bold m-1">
                                     &nbsp;Sistema de gestión de inventario y agenda para clinica medibiologica&nbsp;
                                 </h3>
                                     <p class="uppercase m-1 text-sm xl:text-lg">Stack: C# Y SQL SERVER.</p>
@@ -249,8 +256,8 @@
                                     </div>
                                     <!-- descripcion -->
                                     <div class="mt-2 text-sm xl:text-lg">
-                                        <p>Desarrollado como proyecto de residencia.</p>
-                                        <p><span class="font-bold">Responsabilidad:</span>Análisis y diseño de base de datos,creación de procedimientos almacenados y programación en c#.</p>
+                                        <p class="projectMedibiologicaDescription">Desarrollado como proyecto de residencia.</p>
+                                        <p><span class="projectsRole font-bold">Responsabilidad:</span><span class="projectMedibiologicaRole">Análisis y diseño de base de datos,creación de procedimientos almacenados y programación en c#.</span></p>
                                     </div>
                             </div>
                             <!-- fin::mediobilogica -->
@@ -259,7 +266,7 @@
                             <!--inicio:: tienda  -->
                             <div class="flex flex-col items-center content-center">
                                 <img src="media/logos/logo4.png" alt="" width="9.5%" height="120">
-                                <h3 class="flex text-white text-base xl:text-lg font-bold m-1">
+                                <h3 class="projectManagementSystemTitle flex text-white text-base xl:text-lg font-bold m-1">
                                     &nbsp;Sistema de gestión para tienda&nbsp;
                                     <a href="https://github.com/MichelleEspinoza/michelle-blogsi" target="_blank" class="text-secondary">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -283,8 +290,8 @@
                                     </div>
                                     <!-- descripcion -->
                                     <div class="mt-2 text-sm xl:text-lg">
-                                        <p>Desarrollado como proyecto: Independiente.</p>
-                                        <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(PHP 8.0.2)</p>
+                                        <p class="projectManagementSystemDescription">Desarrollado como proyecto: Independiente.</p>
+                                        <p><span class="projectsRole font-bold">Responsabilidad:</span> Frontend & Backend(PHP 8.0.2)</p>
                                     </div>
                             </div>
                             <!-- fin::Refugio de perros -->
@@ -311,8 +318,8 @@
                                    <!-- descripcion -->
                                    <div class="text-sm">
                                         <p>Stack: NUXT3</p>
-                                        <p>Proyecto desarrollado dentro de 1Delivery</p>
-                                        <p><span class="font-bold">Responsabilidad:</span> Frontend</p>
+                                        <p class="projectSCDescription">Proyecto desarrollado dentro de 1Delivery</p>
+                                        <p><span class="projectsRole font-bold">Responsabilidad:</span> Frontend</p>
                                     </div>
                                 </div>
                            </div>
@@ -343,15 +350,15 @@
                                         </div>
                                         <!-- descripcion -->
                                         <div class="mt-2 text-sm">
-                                            <p>Proyecto desarrollado dentro de materia: programación web</p>
-                                            <p><span class="font-bold">Responsabilidad:</span> Frontend</p>
+                                            <p class="projectPizzeriaDescription">Proyecto desarrollado dentro de materia: programación web</p>
+                                            <p><span class="projectsRole font-bold">Responsabilidad:</span> Frontend</p>
                                         </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <img src="media/logos/logo1.png" alt="" width="9.5%">
-                                    <h3 class="flex text-white text-base font-bold m-1">
+                                    <h3 class="projectDogshelterTitle flex text-white text-base font-bold m-1">
                                         &nbsp;Refugio de perros&nbsp;
                                         <a href="https://github.com/MichelleEspinoza/refugio-de-perros" target="_blank" class="text-secondary">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -374,8 +381,8 @@
                                         </div>
                                         <!-- descripcion -->
                                         <div class="mt-2 text-sm">
-                                            <p>Proyecto desarrollado: Independiente.</p>
-                                            <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(python)</p>
+                                            <p class="projectDogshelterDescription">Proyecto desarrollado: Independiente.</p>
+                                            <p><span class="projectsRole font-bold">Responsabilidad:</span> Frontend & Backend(python)</p>
                                         </div>
                                 </div>
                             </div>
@@ -383,7 +390,7 @@
                                 <!--inicio::mediobilogica -->
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <img src="media/logos/logo3.ico" alt="" width="9.5%" height="120">
-                                    <h3 class="flex text-white text-base font-bold m-1">
+                                    <h3 class="projectMedibiologicaTitle flex text-white text-base font-bold m-1">
                                         &nbsp;Sistema de gestión de inventario y agenda para clinica medibiologica&nbsp;
                                     </h3>
                                         <p class="uppercase m-1 text-sm">Stack: C# Y SQL SERVER.</p>
@@ -401,8 +408,8 @@
                                         </div>
                                         <!-- descripcion -->
                                         <div class="mt-2 text-sm">
-                                            <p>Desarrollado como proyecto de residencia.</p>
-                                            <p><span class="font-bold">Responsabilidad:</span>Análisis y diseño de base de datos,creación de procedimientos almacenados y programación en c#.</p>
+                                            <p class="projectMedibiologicaDescription">Desarrollado como proyecto de residencia.</p>
+                                            <p><span class="projectsRole font-bold">Responsabilidad:</span><span class="projectMedibiologicaRole">Análisis y diseño de base de datos,creación de procedimientos almacenados y programación en c#.</span></p>
                                         </div>
                                 </div>
                                 <!-- fin::mediobilogica -->
@@ -411,7 +418,7 @@
                                 <!--inicio:: tienda  -->
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <img src="media/logos/logo4.png" alt="" width="9%" height="120">
-                                    <h3 class="flex text-white text-base font-bold m-1">
+                                    <h3 class="projectManagementSystemTitle flex text-white text-base font-bold m-1">
                                         &nbsp;Sistema de gestión para tienda&nbsp;
                                         <a href="https://github.com/MichelleEspinoza/michelle-blogsi" target="_blank" class="text-secondary">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -435,8 +442,8 @@
                                         </div>
                                         <!-- descripcion -->
                                         <div class="mt-2 text-sm">
-                                            <p>Desarrollado como proyecto: Independiente.</p>
-                                            <p><span class="font-bold">Responsabilidad:</span> Frontend y Backend(PHP 8.0.2)</p>
+                                            <p class="projectManagementSystemDescription">Desarrollado como proyecto: Independiente.</p>
+                                            <p><span class="font-bold">Responsabilidad:</span> Frontend & Backend(PHP 8.0.2)</p>
                                         </div>
                                 </div>
                                 <!-- fin::Refugio de perros -->
@@ -453,7 +460,7 @@
             <div class="h-screen sm:h-[130vh]">
                 <div class="absolute"><img src="/media/svg/rainbow.svg" class="w-[40%] max-[624px]:hidden" alt=""></div>
             <div class="flex flex-col justify-center items-center h-screen sm:h-[130vh]">
-                <h2 class="font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4 reveal">References</h2>
+                <h2 class="referencesTitle font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4 reveal">Referencias</h2>
             
             <div class="grid grid-cols-5 max-[1368px]:grid-cols-4 max-[1094px]:grid-cols-3 max-[820px]:grid-cols-2 gap-3 max-[820px]:gap-1">
             <div class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow">
@@ -529,7 +536,7 @@
         <section class="bg-yellow">
             <div class="h-screen">
                 <div class="flex flex-col justify-center items-center h-screen">
-                    <h2 class="font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4 reveal">Contacto</h2>
+                    <h2 class="contactTitle font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4 reveal">Contacto</h2>
 
                     <div class="flex flex-row max-lg:flex-col space-x-16 max-lg:space-x-0 max-lg:space-y-8 justify-center">
                         <a class="transition ease-in-out hover:scale-110 duration-300" href="https://discord.gg/MichelleEspinoza" target="_blank" rel="nofollow">
@@ -579,7 +586,9 @@
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script src="/swiper.js"></script>    
+    <script src="/swiper.js"></script>   
+    <!---->
+    <script src="/lang.js"></script> 
 </body>
 
 </html>
