@@ -1,6 +1,7 @@
 
 tailwind.config = {
   title: 'Michelle Espinoza - Portafolio',
+  darkMode: 'class',
   theme: {
       extend: {
           keyframes: {
