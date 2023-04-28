@@ -45,4 +45,4 @@ function changePath(path){
     for (let key in path) {
     document.querySelector('.' + key).src= path[key]
     }
-  }
+}
