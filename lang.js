@@ -22,6 +22,8 @@ const jsonES = {
     "projectManagementSystemDescription":"Desarrollado como proyecto: Independiente.",
     "referencesTitle":"Referencias",
     "contactTitle":"Contacto",
+    "portfolioTitleDevice": "Portafolio",
+    "helloTitleDevice": "¡Hey hola soy, Michelle Espinoza!",
 }
   
   const jsonEN = {
@@ -48,6 +50,8 @@ const jsonES = {
     "projectManagementSystemDescription":"Project developed: Independent.",
     "referencesTitle":"References",
     "contactTitle":"Contact",
+    "portfolioTitleDevice": "Portfolio",
+    "helloTitleDevice": "Hello I'm Michelle Espinoza!",
 }
 
 
