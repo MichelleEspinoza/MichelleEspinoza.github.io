@@ -11,7 +11,7 @@ var swiperW = new Swiper(".mySwiper", {
   );
   var swiperD = new Swiper(".mySwiperDevice", {
     direction: "horizontal",
-    slidesPerView: 1.3,
+    slidesPerView: 1.1,
     spaceBetween: 0,
     mousewheel: true,
     pagination: {
