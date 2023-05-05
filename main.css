@@ -145,13 +145,15 @@ body {
   padding: 20px;
   width: 97%;
   height: 70%;
+  margin-top: 29px;
 }
 
 .close {
-  color: #aaa;
+  color: #dddada;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding-bottom: 3%;
 }
 
 .close:hover,
