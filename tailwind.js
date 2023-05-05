@@ -52,8 +52,11 @@ tailwind.config = {
       },
       fontSize: {
           xs: ['10px', '14px'],
+          xxs: ['7.5px', '10px'],
           sm: ['14px', '24px'],
+          md: ['12px', '15px'],
           base: ['18px', '24px'],
+          xbase: ['13px', '17px'],
           lg: ['22px', '27px'],
           xl: ['28px', '32px'],
           xxl: ['38px', '45px']
