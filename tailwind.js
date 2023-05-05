@@ -32,7 +32,9 @@ tailwind.config = {
               orange: '#ff7a01',
               lesspink: '#f07995',
               yellow: '#ffd600',
-              blue: '#01d3f6'
+              blue: '#01d3f6',
+              dark:'#212121',
+              darkMedium:'#33332d'
           },
           minHeight: {
               20: '20px'
