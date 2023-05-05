@@ -46,7 +46,7 @@ tailwind.config = {
           xl: '1440px'
       },
       fontFamily: {
-          Poppins: ['Roboto', 'sans-serif']
+        mono: ['IBM Plex Mono', 'monospace']
       },
       fontSize: {
           xs: ['10px', '14px'],
