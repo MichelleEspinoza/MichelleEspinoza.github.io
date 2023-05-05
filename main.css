@@ -43,6 +43,11 @@ body {
   align-items: center;
 }
 
+.swiper-pagination-bullet {
+  border-radius: var(--swiper-pagination-bullet-border-radius,50%) !important;
+  background: #ffffffa3 !important;
+}
+
 .img-contact {
   height: 185% !important;
   max-width: 165% !important;

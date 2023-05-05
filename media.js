@@ -46,3 +46,15 @@ function changePath(path){
     document.querySelector('.' + key).src= path[key]
     }
 }
+
+const isDark = localStorage.getItem('darkMode') === 'true';
+document.documentElement.classList.toggle('dark', isDark);
+
+function toggleDarkMode() {
+const isDark = document.documentElement.classList.toggle('dark');
+
+localStorage.setItem(
+  'darkMode',
+  document.documentElement.classList.contains('dark') ? 'true' : 'false'
+);
+}

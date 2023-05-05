@@ -20,28 +20,41 @@
     <div class="text-white min-h-screen">
         <!-- header -->
         <header>
-            <div class="w-screen bg-purple">
+            <div class="w-screen bg-purple dark:bg-black">
                 <!--lang-->
                 <span class="flex justify-between mr-4 max-[320px]:mr-0">
-                    <a id="EN" class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4">
+                    <a id="EN" href="#" class="bg-yellow dark:bg-black hover:dark:shadow-md hover:dark:shadow-white/80 rounded-md border border-white dark:p-1 shadow-sm shadow-white m-4">
+                        <span class="flex dark:border dark:border-white dark:px-1 dark:rounded-md">
                         <img src="http://www.etimpjeans.com/wp-content/uploads/2019/01/eeuu.png" alt="lang" width="20"
                             class="mx-2 my-1">
-                        <span class="text-black mr-2 my-1">EN</span>
+                        <span class="text-black dark:text-white mr-2 my-1">EN</span>
+                    </span>
                     </a>
-                    <a id="ES" class="flex bg-yellow rounded-md border border-white shadow-sm shadow-white m-4 hidden">
+                    <a id="ES" href="#" class="bg-yellow dark:bg-black hover:dark:shadow-md hover:dark:shadow-white/80 rounded-md border border-white dark:p-1 shadow-sm shadow-white m-4 hidden">
+                        <span class="flex dark:border dark:border-white dark:px-1 dark:rounded-md">
                         <img src="https://images.emojiterra.com/twitter/512px/1f1f2-1f1fd.png" alt="lang" width="20"
                             class="mx-2 my-1">
-                        <span class="text-black mr-2 my-1">ES</span>
+                        <span class="text-black dark:text-white mr-2 my-1">ES</span>
+                    </span>
                     </a>
 
-                    <a class="flex bg-lesspink rounded-md border border-white shadow-sm shadow-white m-4"
+                    <span><a onclick="toggleDarkMode()">
+                        <div class="absolute">
+                            <img class="dark:invisible w-[30%] dark:w-[0%] max-[624px]:hidden" src="/media/svg/light/lamp.svg" alt="" width="100%">
+                            <img class="invisible dark:visible w-[0%] dark:w-[30%] dark:max-[624px]:hidden" src="/media/svg/dark/lamp.svg" alt="">
+                        </div>
+                    </a></span>
+
+                    <a class="bg-lesspink dark:bg-black dark:p-1 hover:dark:shadow-md hover:dark:shadow-white/80 rounded-md border border-white shadow-sm shadow-white m-4"
                         href="media/cv/Michelle Espinoza-Español.pdf" target="_blank">
+                        <span class="flex dark:border dark:border-white dark:px-1 dark:rounded-md">
                         <img src="media/svg/CV.svg" alt="" width="20" class="animate-bounce mx-2 my-1">
-                        <span class="downloadCV text-black mr-2 my-1">Descargar CV - ES</span>
+                        <span class="downloadCV text-black dark:text-white mr-2 my-1">Descargar CV - ES</span>
+                        </span>
                     </a>
                 </span>
             </div>
-            <div class="hidden lg:flex min-h-screen items-center justify-center bg-purple static">
+            <div class="hidden lg:flex min-h-screen items-center justify-center bg-purple dark:bg-black static">
                 <span class="absolute pr-[44vw] laptop:pr-[53vw] lg:pr-[53vw]"><img src="/media/svg/avatar.svg"
                         alt="avatar" width="150px"></span>
                 <div>
@@ -52,7 +65,7 @@
                         ¡Hey hola soy, Michelle Espinoza!</h1>
                 </div>
             </div>
-            <div class="lg:hidden min-h-screen bg-purple flex flex-col items-center justify-center">
+            <div class="lg:hidden min-h-screen bg-purple dark:bg-black flex flex-col items-center justify-center">
                 <span class=""><img src="/media/svg/avatar-device.svg" alt="avatar" width="200vw"></span>
                 <div>
                     <h6
@@ -65,13 +78,13 @@
             </div>
         </header>
         <!-- Sobre mi -->
-        <section class="bg-pink">
+        <section class="bg-pink dark:bg-black">
             <div class="h-screen">
-                <div class="absolute"><img src="/media/svg/rainbow.svg" class="w-[40%] max-[624px]:hidden" alt=""></div>
+                <div class="absolute dark:hidden"><img src="/media/svg/rainbow.svg" class="w-[40%] max-[624px]:hidden" alt=""></div>
                 <div
                     class="flex max-[624px]:px-8 lg:px-12 max-lg:flex-col justify-between max-lg:justify-center items-center mx-2 laptop:mx-20 xl:mx-52 h-screen">
                     <div class="w-2/3 max-[624px]:w-[100%] max-lg:[w-100%] reveal">
-                        <h2 class="aboutMe text-yellow font-bold text-xxl lg:text-xl uppercase mb-4">Sobre Mi</h2>
+                        <h2 class="aboutMe text-yellow dark:text-white font-bold text-xxl lg:text-xl uppercase mb-4">Sobre Mi</h2>
                         <p
                             class="aboutMeParagraph font-semibold text-lg max-lg:text-sm mr-12 max-[624px]:mr-0 text-justify">
                             Soy una graduada de ingeniería en sistemas
@@ -80,13 +93,14 @@
                             trabajadora, dedicada, creativa, honesta, autodidacta y trabajo en equipo.</p>
                     </div>
                     <div class="w-1/3 max-[624px]:w-[100%] img-fluid-md lg:img-fluid-lg max-lg:[w-100%]">
-                        <img src="media/logos/profile-white.svg" alt="profile">
+                        <img class="dark:invisible dark:w-[0%]" src="media/svg/light/profile-white.svg" alt="profile">
+                        <img class="invisible w-[0%] dark:w-[100%] dark:visible" src="media/svg/dark/profile-white.svg" alt="profile">
                     </div>
                 </div>
             </div>
         </section>
         <!-- Conocimientos -->
-        <section class="bg-orange">
+        <section class="bg-orange dark:bg-black">
             <div class="h-screen flex flex-col justify-center items-center lg:py-14 max-[515px]:pt-4">
                 <h2 class="knowledgesTitle font-bold text-xl lg:text-xxl max-[337px]:text-base my-1 uppercase reveal">
                     Conocimientos</h2>
@@ -156,7 +170,7 @@
             </div>
         </section>
         <!-- Proyectos -->
-        <section class="bg-lesspink static">
+        <section class="bg-lesspink dark:bg-black static">
             <div class="h-screen">
                 <div class="flex flex-col items-center justify-center text-center">
                     <h2 class="projectsTitle font-bold text-xxl my-1 mt-12 mb-4 uppercase reveal">Proyectos</h2>
@@ -165,15 +179,17 @@
                 <div class="hidden lg:block body">
                     <div class="swiper swiperW mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio::Social Trader -->
                                 <div class="flex flex-col items-center content-center rounded">
-                                    <span class="mt-8 mx-20"><img src="media/logos/logoST.svg" alt="" width="100%"
-                                            class="p-2"></span>
+                                    <span class="mt-8 mx-20">
+                                        <img class="dark:invisible p-2" src="media/logos/logoST.svg" alt="" width="100%">
+                                        <img class="invisible dark:visible p-2 w-[0%] dark:w-[100%]" src="media/logos/logoSTDark.svg" alt="">
+                                    </span>
                                     <h3 id="btn-go" class="flex mb-8 mx-20">
                                         <a id="span-go" href="https://michelleespinoza.github.io/social-trader/"
                                             target="_blank"
-                                            class="p-2 text-base xl:text-lg rounded bg-pink hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                                            class="p-2 text-base xl:text-lg rounded bg-pink dark:bg-white dark:text-black hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
                                             &nbsp;Social Trader&nbsp;
                                         </a>
                                     </h3>
@@ -185,7 +201,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio::La reportada -->
                                 <div class="flex flex-col items-center content-center">
                                     <img src="media/logos/logo2.svg" alt="" width="9.5%">
@@ -227,7 +243,7 @@
                                 </div>
                                 <!-- fin::La reportada -->
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio::Refugio de perros -->
                                 <div class="flex flex-col items-center content-center">
                                     <img src="media/logos/logo1.png" alt="" width="9.5%">
@@ -270,7 +286,7 @@
                                 </div>
                                 <!-- fin::Refugio de perros -->
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio::mediobilogica -->
                                 <div class="flex flex-col items-center content-center">
                                     <img src="media/logos/logo3.ico" alt="" width="9.5%" height="120">
@@ -306,7 +322,7 @@
                                 </div>
                                 <!-- fin::mediobilogica -->
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio:: tienda  -->
                                 <div class="flex flex-col items-center content-center">
                                     <img src="media/logos/logo4.png" alt="" width="9.5%" height="120">
@@ -359,7 +375,7 @@
                 <div class="lg:hidden body-device">
                     <div class="swiper swiperD mySwiperDevice">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio::Social Trader -->
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <span class="mt-8 mx-20"><img src="media/logos/logoST.svg" alt="" width="100%"
@@ -367,7 +383,7 @@
                                     <h3 id="btn-go" class="flex m-1 mb-8 mx-20">
                                         <a id="span-go" href="https://michelleespinoza.github.io/social-trader/"
                                             target="_blank"
-                                            class="p-2 text-base xl:text-lg rounded bg-pink hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                                            class="p-2 text-base xl:text-lg rounded bg-pink dark:bg-white dark:text-black hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
                                             &nbsp;Social Trader&nbsp;
                                         </a>
                                     </h3>
@@ -379,7 +395,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <img src="media/logos/logo2.svg" alt="" width="9.5%">
                                     <h3 class="flex text-white text-base font-bold">
@@ -416,7 +432,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <img src="media/logos/logo1.png" alt="" width="9.5%">
                                     <h3 class="projectDogshelterTitle flex text-white text-base font-bold m-1">
@@ -452,7 +468,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio::mediobilogica -->
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <img src="media/logos/logo3.ico" alt="" width="9.5%" height="120">
@@ -483,7 +499,7 @@
                                 </div>
                                 <!-- fin::mediobilogica -->
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide dark:bg-black">
                                 <!--inicio:: tienda  -->
                                 <div class="flex flex-col items-center content-center max-lg:pl-[5px]">
                                     <img src="media/logos/logo4.png" alt="" width="9%" height="120">
@@ -535,15 +551,15 @@
                             <div style="padding-top: 15px; padding-left: 8px;">
                                 <div class="swiper swiperD mySwiperDevice">
                                     <div class="swiper-wrapper">
-                                        <div class="device swiper-slide">
+                                        <div class="device swiper-slide dark:swiper-slide-dark">
                                             <img src="" class="mediaGifOne img-fluid-xl"
                                                 alt="thumbnail">
                                         </div>
-                                        <div class="device swiper-slide">
+                                        <div class="device swiper-slide dark:swiper-slide-dark">
                                             <img src="" class="mediaGifTwo img-fluid-xl"
                                                 alt="thumbnail">
                                         </div>
-                                        <div class="device swiper-slide">
+                                        <div class="device swiper-slide dark:swiper-slide-dark">
                                             <img src="" class="mediaGifThree img-fluid-xl"
                                                 alt="thumbnail">
                                         </div>
@@ -560,19 +576,20 @@
             </div>
         </section>
         <!-- references -->
-        <section class="bg-blue">
+        <section class="bg-blue dark:bg-black">
             <div class="h-screen sm:h-[130vh]">
-                <div class="absolute"><img src="/media/svg/rainbow.svg" class="w-[40%] max-[624px]:hidden" alt=""></div>
+                <div class="absolute dark:hidden"><img src="/media/svg/rainbow.svg" class="w-[40%] max-[624px]:hidden" alt=""></div>
                 <div class="flex flex-col justify-center items-center h-screen sm:h-[130vh]">
                     <h2 class="referencesTitle font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4 reveal">
                         Referencias</h2>
 
                     <div
                         class="grid grid-cols-5 max-[1368px]:grid-cols-4 max-[1094px]:grid-cols-3 max-[820px]:grid-cols-2 gap-3 max-[820px]:gap-1">
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow">
+                        <span class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow dark:bg-black text-black dark:border-[3px] dark:border-white dark:rounded-xl">
+                        <div class="dark:hover:bg-yellow/80 dark:bg-white dark:m-2  dark:border-[3px] dark:border-white dark:rounded-xl">
                             <div class="px-6 py-4 max-[820px]:py-2">
-                                <div class="text-black font-bold text-xl max-[820px]:text-base mb-2">Walter Diaz</div>
-                                <p class="text-black text-base">
+                                <div class="font-bold text-xl max-[820px]:text-base mb-2">Walter Diaz</div>
+                                <p class="text-base">
                                     Hitss
                                 </p>
                             </div>
@@ -582,11 +599,14 @@
                                     FullStack</span>
                             </div>
                         </div>
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-lesspink">
+                       </span>
+
+                       <span class="max-w-sm rounded overflow-hidden shadow-lg bg-lesspink dark:bg-black text-black dark:border-[3px] dark:border-white dark:rounded-xl">
+                        <div class="dark:hover:bg-lesspink/80 dark:bg-white dark:m-2  dark:border-[3px] dark:border-white dark:rounded-xl">
                             <div class="px-6 py-4 max-[820px]:py-2">
-                                <div class="text-black font-bold text-xl max-[820px]:text-base mb-2">Katherin Serna
+                                <div class="font-bold text-xl max-[820px]:text-base mb-2">Katherin Serna
                                 </div>
-                                <p class="text-gray-700 text-base">
+                                <p class="text-base">
                                     Jelp Delivery
                                 </p>
                             </div>
@@ -596,10 +616,13 @@
                                     FrontEnd</span>
                             </div>
                         </div>
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow">
+                    </span>
+                    
+                    <span class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow dark:bg-black text-black dark:border-[3px] dark:border-white dark:rounded-xl">
+                        <div class="dark:hover:bg-yellow/80 dark:bg-white dark:m-2  dark:border-[3px] dark:border-white dark:rounded-xl" >
                             <div class="px-6 py-4 max-[820px]:py-2">
-                                <div class="text-black font-bold text-xl max-[820px]:text-base mb-2">Samuel Ayon</div>
-                                <p class="text-gray-700 text-base">
+                                <div class="font-bold text-xl max-[820px]:text-base mb-2">Samuel Ayon</div>
+                                <p class="text-base">
                                     ITT
                                 </p>
                             </div>
@@ -609,11 +632,14 @@
                                     de Soporte</span>
                             </div>
                         </div>
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-lesspink">
+                    </span>
+
+                    <span class="max-w-sm rounded overflow-hidden shadow-lg bg-lesspink dark:bg-black text-black dark:border-[3px] dark:border-white dark:rounded-xl">
+                        <div class="dark:hover:bg-lesspink/80 dark:bg-white dark:m-2  dark:border-[3px] dark:border-white dark:rounded-xl">
                             <div class="px-6 py-4 max-[820px]:py-2">
-                                <div class="text-black font-bold text-xl max-[820px]:text-base mb-2">Adilene Zazueta
+                                <div class="font-bold text-xl max-[820px]:text-base mb-2">Adilene Zazueta
                                 </div>
-                                <p class="text-black text-base">
+                                <p class="text-base">
                                     AyO
                                 </p>
                             </div>
@@ -623,11 +649,14 @@
                                     Humano</span>
                             </div>
                         </div>
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow">
+                    </span>
+
+                    <span class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow dark:bg-black text-black dark:border-[3px] dark:border-white dark:rounded-xl">
+                        <div class="dark:hover:bg-yellow/80 dark:bg-white dark:m-2  dark:border-[3px] dark:border-white dark:rounded-xl">
                             <div class="px-6 py-4 max-[820px]:py-2">
-                                <div class="text-black font-bold text-xl max-[820px]:text-base mb-2">Juliet Quintero
+                                <div class="font-bold text-xl max-[820px]:text-base mb-2">Juliet Quintero
                                 </div>
-                                <p class="text-black text-base">
+                                <p class="text-base">
                                     medibiologica
                                 </p>
                             </div>
@@ -637,10 +666,13 @@
                                     Scientist</span>
                             </div>
                         </div>
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-lesspink">
+                    </span>
+
+                    <span class="max-w-sm rounded overflow-hidden shadow-lg bg-lesspink dark:bg-black text-black dark:border-[3px] dark:border-white dark:rounded-xl">
+                        <div class="dark:hover:bg-lesspink/80 dark:bg-white dark:m-2  dark:border-[3px] dark:border-white dark:rounded-xl">
                             <div class="px-6 py-4 max-[820px]:py-2">
-                                <div class="text-black font-bold text-xl max-[820px]:text-base mb-2">Luis Camacho</div>
-                                <p class="text-black text-base">
+                                <div class="font-bold text-xl max-[820px]:text-base mb-2">Luis Camacho</div>
+                                <p class="text-base">
                                     ITT
                                 </p>
                             </div>
@@ -650,11 +682,13 @@
                                     backend</span>
                             </div>
                         </div>
+                    </span>
+
                     </div>
                 </div>
         </section>
         <!-- Contacto -->
-        <section class="bg-yellow">
+        <section class="bg-yellow dark:bg-black">
             <div class="h-screen">
                 <div class="flex flex-col justify-center items-center h-screen">
                     <h2 class="contactTitle font-bold text-xxl xl:text-[60px] my-3 mt-8 uppercase mb-4 reveal">Contacto
@@ -697,22 +731,22 @@
                             <img alt="Whatsapp" class="img-contact"
                                 src="https://img.shields.io/badge/Whatsapp-%1bd741.svg?logo=Whatsapp&amp;logoColor=white"
                                 data-canonical-src="https://img.shields.io/badge/Whatsapp-%1bd741.svg?logo=Whatsapp&amp;logoColor=white">
-                        </a>
+                        </a>                        
                     </div>
                 </div>
             </div>
         </section>
         <!-- footer -->
-        <footer class="px-4 text-white bg-blue font-semibold">
-            <div class="bg-blue">
+        <footer class="px-4 text-white bg-blue dark:bg-black font-semibold">
+            <div class="bg-blue dark:bg-black">
                 <span class="flex max-lg:flex-col items-center max-lg:items-start pt-2">
-                    <img src="/media/logos/icon-me.png" alt="logo" width="150px">
+                    <img  class="dark:invisible dark:w-[0%]" src="/media/logos/icon-me.png" alt="logo" width="150px">
+                    <img  class="invisible w-[0%] dark:w-[150px] dark:visible"  src="/media/logos/icon-me-dark.png" alt="logo" width="150px">
                     <span class="ml-3 max-lg:mt-2">
                         <p class="mb-3 max-[458px]:flex max-[458px]:flex-col"><span
-                                class="bg-[#dc3545] rounded-md p-1 mr-2 w-[18%] max-[334px]:w-[24%]">Gmail</span><span
-                                class="max-[334px]:text-[12px]">estephani.espinoza17@tectijuana.edu.mx</span></p>
-                        <p class="max-[458px]:flex max-[458px]:flex-col max-[458px]:mb-8"><span
-                                class="bg-[#28a745] rounded-md p-1 mr-2 w-[18%]">Tel.</span>+52 664 173 22 66</p>
+                            class="bg-[#dc3545] dark:bg-black dark:border dark:border-white rounded-md p-1 mr-2 w-[18%] max-[334px]:w-[24%]"><span class="dark:border dark:border-white dark:px-1">Gmail</span></span><span
+                            class="max-[334px]:text-[12px]">estephani.espinoza17@tectijuana.edu.mx</span></p>
+                        <p class="max-[458px]:flex max-[458px]:flex-col max-[458px]:mb-8"><span class="bg-[#28a745] dark:bg-black dark:border dark:border-white rounded-md p-1 mr-2 w-[18%]"><span class="dark:border dark:border-white dark:px-1">Tel.</span></span>+52 664 173 22 66</p>
                     </span>
                 </span>
                 <p class="flex pt-0 pb-3 justify-center">
