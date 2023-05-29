@@ -267,3 +267,18 @@ body {
 .wrapper .button:nth-child(5) span {
   color: #ff0000;
 }
+
+
+.tooltip-not-dark, .tooltip-dark  {
+  visibility: hidden;
+} 
+
+.has-tooltip:hover .tooltip-not-dark {
+  visibility: visible;
+  opacity: 1;
+}
+
+.has-tooltip-dark:hover .tooltip-dark {
+  visibility: visible;
+  opacity: 1;
+}

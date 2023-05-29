@@ -24,6 +24,8 @@ const jsonES = {
     "contactTitle":"Contacto",
     "portfolioTitleDevice": "Portafolio",
     "helloTitleDevice": "¡Hey hola soy, Michelle Espinoza!",
+    "themeTooltipNotDark": "¿Quieres el modo Oscuro?(clic)",
+    "themeTooltipDark": "¿Quieres el modo claro?(clic)",
 }
   
   const jsonEN = {
@@ -52,6 +54,8 @@ const jsonES = {
     "contactTitle":"Contact",
     "portfolioTitleDevice": "Portfolio",
     "helloTitleDevice": "Hello I'm Michelle Espinoza!",
+    "themeTooltipNotDark": "Do you want Dark mode? (click)",
+    "themeTooltipDark": "Do you want light mode? (click)",
 }
 
 
