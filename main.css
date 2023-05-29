@@ -282,3 +282,11 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+.has-tooltip-dark .tooltip-dark::after {
+  content: "";
+}
+
+.has-tooltip .tooltip-not-dark::after {
+  content: "";
+}
