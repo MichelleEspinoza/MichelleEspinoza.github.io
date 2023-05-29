@@ -47,11 +47,13 @@ function changePath(path){
     }
 }
 
-const isDark = localStorage.getItem('darkMode') === 'true';
+const storage = localStorage.getItem('darkMode');
+
+const isDark = (storage ? storage === 'true' : 'false');
 document.documentElement.classList.toggle('dark', isDark);
 
 function toggleDarkMode() {
-const isDark = document.documentElement.classList.toggle('dark');
+document.documentElement.classList.toggle('dark');
 
 localStorage.setItem(
   'darkMode',
