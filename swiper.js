@@ -1,3 +1,4 @@
+/*content multimedia: Projects*/
 var swiperW = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 1,

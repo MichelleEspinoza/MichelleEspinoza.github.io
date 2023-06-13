@@ -1,4 +1,4 @@
-
+/* tailwind configuration */
 tailwind.config = {
   title: 'Michelle Espinoza - Portafolio',
   darkMode: 'class',
@@ -64,6 +64,7 @@ tailwind.config = {
   },
 }
 
+/* Header of sections */
 function reveal() {
     const reveals = document.querySelectorAll(".reveal");
   
