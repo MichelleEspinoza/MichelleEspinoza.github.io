@@ -4,37 +4,20 @@ tailwind.config = {
   darkMode: 'class',
   theme: {
       extend: {
-          keyframes: {
-              typing: {
-              "0%": {
-                  width: "0%",
-                  visibility: "hidden"
-              },
-              "100%": {
-                  width: "100%"
-              }  
-              },
-              blink: {
-              "50%": {
-                  borderColor: "transparent"
-              },
-              "100%": {
-                  borderColor: "white"
-              }  
-              }
-          },
+         keyframes: {
+    typing: {
+        "0%": { width: "0" },
+        "30%": { width: "37ch" },
+        "80%": { width: "37ch" },
+        "100%": { width: "0" }
+    },
+    blink: {
+        "50%": { borderColor: "transparent" }
+    }
+},
           animation: {
-              typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
-          },
-          colors: {
-              purple: '#5f1ec4',
-              pink: '#e41a92',
-              orange: '#ff7a01',
-              lesspink: '#f07995',
-              yellow: '#ffd600',
-              blue: '#01d3f6',
-              dark:'#212121',
-              darkMedium:'#33332d'
+              typing: "typing 10s steps(40, end) infinite", 
+    blink: "blink 1s step-end infinite"
           },
           minHeight: {
               20: '20px'
@@ -63,22 +46,3 @@ tailwind.config = {
       }
   },
 }
-
-/* Header of sections */
-function reveal() {
-    const reveals = document.querySelectorAll(".reveal");
-  
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  
-  window.addEventListener("scroll", reveal);
